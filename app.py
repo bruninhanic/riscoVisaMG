@@ -10,7 +10,7 @@ cnaeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv"
 def load_data():
     # carrega os dados das atividades
 
-    data = pd.read_csv(cnaeURL, dtype='object', index_col='codigoCnae', encoding='utf8', sep=';', on_bad_lines)
+    data = pd.read_csv(cnaeURL, dtype='object', index_col='codigoCnae', encoding='utf8', sep=';')
 
     return data
 
