@@ -3,7 +3,7 @@
 import streamlit as st
 import pandas as pd
 
-cnaeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv"
+cnaeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv?raw=true"
 #riscoURL =
 
 @st.cache
