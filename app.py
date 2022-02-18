@@ -39,7 +39,7 @@ riscos = filtered_df.classificacaoRisco.to_list()
 def risco_estabelecimento():
     
     if not riscos:
-        classificacaoRisco = None
+        classificacaoRisco = ''
         return classificacaoRisco        
     if 'Nível de Risco III' in riscos:
         classificacaoRisco = 'Nível de Risco III'
