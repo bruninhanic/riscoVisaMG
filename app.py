@@ -10,12 +10,12 @@ cnaeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv"
 def load_data():
     # carrega os dados das atividades
 
-    data = pd.read_csv(cnaeURL, dtype='object', encoding='utf8', sep=';', on_bad_lines='skip')
+    data = pd.read_csv(cnaeURL, dtype='object', encoding='utf8', sep=';', on_bad_lines='skip', index_col='codigoCnae')
 
     return data
 
 df = load_data()
-labels = df.codigoCnae.to_list()
+labels = df.index.to_list()
 
 #SIDEBAR
 
@@ -32,7 +32,7 @@ label_to_filter = st.sidebar.multiselect(
 st.sidebar.markdown('Para a correta classificação de risco, você deve informar todas as atividades sujeitas a controle sanitário.')
 
 #Aplicação do filtro no dataframe e classificação do risco
-filtered_df = df[df.codigoCnae.isin(label_to_filter)]
+filtered_df = df[df.index.isin(label_to_filter)]
 
 riscos = filtered_df.classificacaoRisco.to_list()
 
