@@ -1,0 +1,257 @@
+;codigoCnae;descricaoCnae;classificacaoRisco
+0;8411-6/00;Administração pública em geral ;Nível de Risco I
+1;8730-1/02;Albergues assistenciais;Nível de Risco II
+2;5590-6/01;Albergues, exceto assistenciais;Nível de Risco II
+3;7739-0/02;Aluguel de equipamentos científicos, médicos e hospitalares, sem operador ;Atividade econômica dependente de informação e condicionante
+4;7729-2/03;Aluguel de material médico ;Atividade econômica dependente de informação e condicionante
+5;5510-8/02;Apart-hotéis;Nível de Risco II
+6;5211-7/01;Armazéns gerais - emissão de warrant ;Atividade econômica dependente de informação e condicionante
+7;8630-5/02;Atividade médica ambulatorial com recursos para realização de exames complementares ;Nível de Risco III
+8;8630-5/01;Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos ;Nível de Risco III
+9;8630-5/03;Atividade médica ambulatorial restrita a consultas;Atividade econômica dependente de informação e condicionante
+10;8630-5/04;Atividade odontológica;Nível de Risco III
+11;8690-9/03;Atividades de acupuntura;Nível de Risco II
+12;8711-5/03;Atividades de assistência a deficientes físicos, imunodeprimidos e convalescentes;Nível de Risco III
+13;8720-4/99;Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental e dependência química não especificadas anteriormente ;Nível de Risco III
+14;8730-1/99;Atividades de assistência social prestadas em residências coletivas e particulares não especificadas anteriormente ;Nível de Risco II
+15;8630-5/99;Atividades de atenção ambulatorial não especificadas anteriormente;Atividade econômica dependente de informação e condicionante
+16;8610-1/02;Atividades de atendimento em pronto-socorro e unidades hospitalares para atendimento a urgências ;Nível de Risco III
+17;8610-1/01;Atividades de atendimento hospitalar, exceto pronto-socorro e unidades para atendimento a urgências ;Nível de Risco III
+18;8690-9/02;Atividades de bancos de leite humano ;Nível de Risco III
+19;8720-4/01;Atividades de centros de assistência psicossocial ;Atividade econômica dependente de informação e condicionante
+20;9313-1/00;Atividades de condicionamento físico;Nível de Risco II
+21;8650-0/01;Atividades de enfermagem;Atividade econômica dependente de informação e condicionante
+22;9602-5/02;Atividades de estética e outros serviços de cuidados com a beleza ;Atividade econômica dependente de informação e condicionante
+23;8650-0/04;Atividades de fisioterapia;Atividade econômica dependente de informação e condicionante
+24;8712-3/00;Atividades de fornecimento de infra-estrutura de apoio e assistência a paciente no domicílio ;Nível de Risco III
+25;5310-5/02;Atividades de franqueadas e permissionárias do Correio Nacional ;Nível de Risco I
+26;8129-0/00;Atividades de limpeza não especificadas anteriormente ;Atividade econômica dependente de informação e condicionante
+27;8690-9/04;Atividades de podologia ;Nível de Risco II
+28;8690-9/01;Atividades de práticas integrativas e complementares em saúde humana;Nível de Risco II
+29;8650-0/99;Atividades de profissionais da área de saúde não especificadas anteriormente;Atividade econômica dependente de informação e condicionante
+30;8630-5/07;Atividades de reprodução humana assistida ;Nível de Risco III
+31;9609-2/05;Atividades de sauna e banhos;Nível de Risco II
+32;8640-2/99;Atividades de serviços de complementação diagnóstica e terapêutica não especificadas anteriormente;Nível de Risco III
+33;8650-0/07;Atividades de terapia de nutrição enteral e parenteral;Nível de Risco III
+34;5310-5/01;Atividades do Correio Nacional ;Nível de Risco I
+35;9603-3/99;Atividades funerárias e serviços relacionados não especificados anteriormente ;Atividade econômica dependente de informação e condicionante
+36;7500-1/00;Atividades veterinárias ;Nível de Risco I
+37;5611-2/04;Bares e outros estabelecimentos especializados em servir bebidas, sem entretenimento;Nível de Risco II
+38;5611-2/05;Bares e outros estabelecimentos especializados em servir bebidas, com entretenimento;Nível de Risco II
+39;1061-9/01;Beneficiamento de arroz;Nível de Risco II
+40;1081-3/01;Beneficiamento de café ;Nível de Risco II
+41;9602-5/01;Cabeleireiros, manicure e pedicure;Nível de Risco II
+42;5620-1/03;Cantinas - serviços de alimentação privativos ;Nível de Risco II
+43;8711-5/04;Centros de apoio a pacientes com câncer e com AIDS;Nível de Risco II
+44;8711-5/01;Clínicas e residências geriátricas;Nível de Risco III
+45;9312-3/00;Clubes sociais, esportivos e similares ;Nível de Risco II
+46;4637-1/02;Comércio atacadista de açúcar ;Nível de Risco II
+47;4635-4/01;Comércio atacadista de água mineral ;Nível de Risco II
+48;4634-6/02;Comércio atacadista de aves abatidas e derivados;Nível de Risco II
+49;4633-8/02;Comércio atacadista de aves vivas e ovos;Nível de Risco II
+50;4635-4/03;Comércio atacadista de bebidas com atividade de fracionamento e acondicionamento associada ;Atividade econômica dependente de informação e condicionante
+51;4635-4/99;Comércio atacadista de bebidas não especificadas anteriormente ;Nível de Risco II
+52;4623-1/05;Comércio atacadista de cacau ;Nível de Risco II
+53;4621-4/00;Comércio atacadista de café em grão ;Nível de Risco II
+54;4637-1/01;Comércio atacadista de café torrado, moído e solúvel ;Nível de Risco II
+55;4634-6/01;"Comércio atacadista de carnes bovinas e suínas e derivados 
+";Nível de Risco II
+56;4634-6/99;Comércio atacadista de carnes e derivados de outros animais;Nível de Risco II
+57;4632-0/01;Comércio atacadista de cereais e leguminosas beneficiados ;Nível de Risco II
+58;4632-0/03;Comércio atacadista de cereais e leguminosas beneficiados, farinhas, amidos e féculas, com atividade de fracionamento e acondicionamento associada ;Nível de Risco III
+59;4635-4/02;Comércio atacadista de cerveja, chope e refrigerante ;Nível de Risco I
+60;4637-1/07;Comércio atacadista de chocolates, confeitos, balas, bombons e semelhantes ;Nível de Risco I
+61;4646-0/01;Comércio atacadista de cosméticos e produtos de perfumaria ;Nível de Risco III
+62;4632-0/02;Comércio atacadista de farinhas, amidos e féculas ;Nível de Risco II
+63;4633-8/01;Comércio atacadista de frutas, verduras, raízes, tubérculos, hortaliças e legumes frescos ;Nível de Risco II
+64;4645-1/01;Comércio atacadista de instrumentos e materiais para uso médico, cirúrgico, hospitalar e de laboratórios ;Nível de Risco III
+65;4631-1/00;Comércio atacadista de leite e laticínios;Nível de Risco II
+66;4664-8/00;"Comércio atacadista de máquinas, aparelhos e equipamentos para uso odonto-médico-hospitalar; partes e peças";Nível de Risco III
+67;4637-1/05;Comércio atacadista de massas alimentícias ;Nível de Risco II
+68;4623-1/08;Comércio atacadista de matérias-primas agrícolas com atividade de fracionamento e acondicionamento associada ;Nível de Risco I
+69;4623-1/99;Comércio atacadista de matérias-primas agrícolas não especificadas anteriormente ;Nível de Risco I
+70;4644-3/01;Comércio atacadista de medicamentos e drogas de uso humano ;Nível de Risco III
+71;4691-5/00;Comércio atacadista de mercadorias em geral, com predominância de produtos alimentícios;Atividade econômica dependente de informação e condicionante
+72;4637-1/03;Comércio atacadista de óleos e gorduras ;Nível de Risco II
+73;4684-2/99;Comércio atacadista de outros produtos químicos e petroquímicos não especificados anteriormente ;Atividade econômica dependente de informação e condicionante
+74;4637-1/04;Comércio atacadista de pães, bolos, biscoitos e similares ;Nível de Risco II
+75;4634-6/03;Comércio atacadista de pescados e frutos do mar;Nível de Risco II
+76;4639-7/01;Comércio atacadista de produtos alimentícios em geral ;Nível de Risco II
+77;4639-7/02;Comércio atacadista de produtos alimentícios em geral, com atividade de fracionamento e acondicionamento associada ;Nível de Risco III
+78;4649-4/08;Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar ;Nível de Risco III
+79;4649-4/09;Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar, com atividade de fracionamento e acondicionamento associada ;Nível de Risco III
+80;4646-0/02;Comércio atacadista de produtos de higiene pessoal ;Nível de Risco III
+81;4645-1/03;Comércio atacadista de produtos odontológicos ;Nível de Risco III
+82;4645-1/02;Comércio atacadista de próteses e artigos de ortopedia ;Nível de Risco III
+83;4622-2/00;Comércio atacadista de soja ;Nível de Risco II
+84;4637-1/06;Comércio atacadista de sorvetes ;Nível de Risco II
+85;4637-1/99;Comércio atacadista especializado em outros produtos alimentícios não especificados anteriormente ;Nível de Risco II
+86;4774-1/00;Comércio varejista de artigos de óptica ;Nível de Risco I
+87;4773-3/00;Comércio varejista de artigos médicos e ortopédicos ;Atividade econômica dependente de informação e condicionante
+88;4722-9/01;"Comércio varejista de carnes - açougues
+";Atividade econômica dependente de informação e condicionante
+89;4772-5/00;Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal ;Nível de Risco II
+90;4724-5/00;Comércio varejista de hortifrutigranjeiros;Nível de Risco II
+91;4721-1/03;Comércio varejista de laticínios e frios ;Nível de Risco II
+92;4711-3/01;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - hipermercados ;Nível de Risco II
+93;4711-3/02;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - supermercados ;Nível de Risco II
+94;4712-1/00;Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns;Nível de Risco II
+95;4729-6/02;Comércio varejista de mercadorias em lojas de conveniência;Atividade econômica dependente de informação e condicionante
+96;4789-0/99;Comércio varejista de outros produtos não especificados anteriormente;Atividade econômica dependente de informação e condicionante
+97;4729-6/99;Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente;Nível de Risco II
+98;4771-7/02;Comércio varejista de produtos farmacêuticos, com manipulação de fórmulas ;Nível de Risco III
+99;4771-7/03;Comércio varejista de produtos farmacêuticos homeopáticos ;Nível de Risco III
+100;4771-7/01;Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas ;Nível de Risco III
+101;4789-0/05;Comércio varejista de produtos saneantes domissanitários ;Nível de Risco II
+102;8711-5/05;Condomínios residenciais para idosos;Nível de Risco II
+103;5211-7/99;Depósitos de mercadorias para terceiros, exceto armazéns gerais e guarda-móveis ;Atividade econômica dependente de informação e condicionante
+104;6202-3/00;Desenvolvimento e licenciamento de programas de computador customizáveis;Atividade econômica dependente de informação e condicionante
+105;6203-1/00;Desenvolvimento e licenciamento de programas de computador não- customizáveis;Atividade econômica dependente de informação e condicionante
+106;3600-6/02;Distribuição de água por caminhões;Nível de Risco III
+107;8511-2/00;Educação infantil - creche ;Nível de Risco III
+108;8512-1/00;Educação infantil - pré-escola ;Nível de Risco II
+109;8513-9/00;Ensino fundamental;Nível de Risco II
+110;8292-0/00;Envasamento e empacotamento sob contrato ;Atividade econômica dependente de informação e condicionante
+111;1742-7/02;Fabricação de absorventes higiênicos ;Nível de Risco III
+112;1072-4/01;Fabricação de açúcar de cana refinado ;Nível de Risco III
+113;1072-4/02;Fabricação de açúcar de cereais (dextrose) e de beterraba ;Atividade econômica dependente de informação e condicionante
+114;1071-6/00;Fabricação de açúcar em bruto ;Atividade econômica dependente de informação e condicionante
+115;2091-6/00;Fabricação de adesivos e selantes;Atividade econômica dependente de informação e condicionante
+116;2093-2/00;Fabricação de aditivos de uso industrial;Atividade econômica dependente de informação e condicionante
+117;1099-6/06;Fabricação de adoçantes naturais e artificiais ;Nível de Risco III
+118;1121-6/00;Fabricação de águas envasadas ;Nível de Risco III
+119;1931-4/00;Fabricação de álcool ;Nível de Risco I
+120;1099-6/07;Fabricação de alimentos dietéticos e complementos alimentares ;Nível de Risco III
+121;1096-1/00;Fabricação de alimentos e pratos prontos ;Atividade econômica dependente de informação e condicionante
+122;1065-1/01;Fabricação de amidos e féculas de vegetais ;Atividade econômica dependente de informação e condicionante
+123;3250-7/04;Fabricação de aparelhos e utensílios para correção de defeitos físicos e aparelhos ortopédicos em geral, exceto sob encomenda ;Nível de Risco III
+124;3250-7/03;Fabricação de aparelhos e utensílios para correção de defeitos físicos e aparelhos ortopédicos em geral sob encomenda ;Nível de Risco III
+125;2660-4/00;Fabricação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação ;Nível de Risco III
+126;2219-6/00;Fabricação de artefatos de borracha não especificados anteriormente ;Atividade econômica dependente de informação e condicionante
+127;2229-3/99;Fabricação de artefatos de material plástico para outros usos não especificados anteriormente ;Atividade econômica dependente de informação e condicionante
+128;2229-3/01;Fabricação de artefatos de material plástico para uso pessoal e doméstico ;Atividade econômica dependente de informação e condicionante
+129;3250-7/07;Fabricação de artigos ópticos ;Atividade econômica dependente de informação e condicionante
+130;1122-4/04;Fabricação de bebidas isotônicas ;Nível de Risco III
+131;3092-0/00;Fabricação de bicicletas e triciclos não-motorizados, peças e acessórios ;Atividade econômica dependente de informação e condicionante
+132;1092-9/00;Fabricação de biscoitos e bolachas ;Atividade econômica dependente de informação e condicionante
+133;1122-4/02;Fabricação de chá mate e outros chás prontos para consumo ;Nível de Risco I
+134;1733-8/00;Fabricação de chapas e de embalagens de papelão ondulado ;Atividade econômica dependente de informação e condicionante
+135;2011-8/00;Fabricação de cloro e álcalis ;Nível de Risco I
+136;1031-7/00;Fabricação de conservas de frutas ;Atividade econômica dependente de informação e condicionante
+137;1032-5/99;Fabricação de conservas de legumes e outros vegetais, exceto palmito ;Atividade econômica dependente de informação e condicionante
+138;1032-5/01;Fabricação de conservas de palmito ;Nível de Risco III
+139;2063-1/00;Fabricação de cosméticos, produtos de perfumaria e de higiene pessoal ;Nível de Risco III
+140;2051-7/00;Fabricação de defensivos agrícolas;Atividade econômica dependente de informação e condicionante
+141;2052-5/00;Fabricação de desinfestantes domissanitários ;Nível de Risco III
+142;1732-0/00;Fabricação de embalagens de cartolina e papel-cartão ;Atividade econômica dependente de informação e condicionante
+143;2222-6/00;Fabricação de embalagens de material plástico ;Atividade econômica dependente de informação e condicionante
+144;1731-1/00;Fabricação de embalagens de papel ;Atividade econômica dependente de informação e condicionante
+145;2312-5/00;Fabricação de embalagens de vidro;Atividade econômica dependente de informação e condicionante
+146;2591-8/00;Fabricação de embalagens metálicas;Atividade econômica dependente de informação e condicionante
+147;3292-2/02;Fabricação de equipamentos e acessórios para segurança pessoal e profissional ;Atividade econômica dependente de informação e condicionante
+148;2670-1/01;Fabricação de equipamentos e instrumentos ópticos, peças e acessórios ;Nível de Risco I
+149;3291-4/00;Fabricação de escovas, pincéis e vassouras ;Atividade econômica dependente de informação e condicionante
+150;1095-3/00;Fabricação de especiarias, molhos, temperos e condimentos ;Atividade econômica dependente de informação e condicionante
+151;1063-5/00;Fabricação de farinha de mandioca e derivados ;Atividade econômica dependente de informação e condicionante
+152;1064-3/00;Fabricação de farinha de milho e derivados, exceto óleos de milho ;Atividade econômica dependente de informação e condicionante
+153;1099-6/03;Fabricação de fermentos e leveduras ;Nível de Risco III
+154;1742-7/01;Fabricação de fraldas descartáveis ;Nível de Risco III
+155;1093-7/02;Fabricação de frutas cristalizadas, balas e semelhantes ;Atividade econômica dependente de informação e condicionante
+156;2014-2/00;Fabricação de gases industriais;Atividade econômica dependente de informação e condicionante
+157;1099-6/04;Fabricação de gelo comum ;Nível de Risco II
+158;3250-7/01;Fabricação de instrumentos não-eletrônicos e utensílios para uso médico, cirúrgico, odontológico e de laboratório;Nível de Risco III
+159;1043-1/00;Fabricação de margarina e outras gorduras vegetais e de óleos não-comestíveis de animais ;Atividade econômica dependente de informação e condicionante
+160;1094-5/00;Fabricação de massas alimentícias ;Atividade econômica dependente de informação e condicionante
+161;3250-7/05;Fabricação de materiais para medicina e odontologia ;Nível de Risco III
+162;2121-1/01;Fabricação de medicamentos alopáticos para uso humano ;Nível de Risco III
+163;2121-1/03;Fabricação de medicamentos fitoterápicos para uso humano ;Nível de Risco III
+164;2121-1/02;Fabricação de medicamentos homeopáticos para uso humano ;Nível de Risco III
+165;3250-7/02;Fabricação de mobiliário para uso médico, cirúrgico, odontológico e de laboratório ;Nível de Risco III
+166;1065-1/02;Fabricação de óleo de milho em bruto ;Nível de Risco III
+167;1065-1/03;Fabricação de óleo de milho refinado ;Nível de Risco III
+168;1041-4/00;Fabricação de óleos vegetais em bruto, exceto óleo de milho;Nível de Risco III
+169;1042-2/00;Fabricação de óleos vegetais refinados, exceto óleo de milho ;Nível de Risco III
+170;1122-4/99;Fabricação de outras bebidas não-alcoólicas não especificadas anteriormente ;Atividade econômica dependente de informação e condicionante
+171;2829-1/99;Fabricação de outras máquinas e equipamentos de uso geral não especificados anteriormente, peças e acessórios ;Atividade econômica dependente de informação e condicionante
+172;1099-6/99;Fabricação de outros produtos alimentícios não especificados anteriormente ;Atividade econômica dependente de informação e condicionante
+173;2019-3/99;Fabricação de outros produtos químicos inorgânicos não especificados anteriormente ;Atividade econômica dependente de informação e condicionante
+174;1099-6/02;Fabricação de pós alimentícios ;Nível de Risco III
+175;2123-8/00;Fabricação de preparações farmacêuticas ;Nível de Risco III
+176;1082-1/00;Fabricação de produtos à base de café ;Atividade econômica dependente de informação e condicionante
+177;2349-4/99;Fabricação de produtos cerâmicos não refratários não especificados anteriormente;Atividade econômica dependente de informação e condicionante
+178;2341-9/00;Fabricação de produtos cerâmicos refratários;Atividade econômica dependente de informação e condicionante
+179;2062-2/00;Fabricação de produtos de limpeza e polimento ;Nível de Risco III
+180;1091-1/02;Fabricação de produtos de padaria e confeitaria com predominância de produção própria ;Nível de Risco II
+181;1091-1/01;Fabricação de produtos de panificação Industrial ;Atividade econômica dependente de informação e condicionante
+182;1093-7/01;Fabricação de produtos derivados do cacau e de chocolates ;Atividade econômica dependente de informação e condicionante
+183;1061-9/02;Fabricação de produtos do arroz ;Atividade econômica dependente de informação e condicionante
+184;2110-6/00;Fabricação de produtos farmoquímicos ;Atividade econômica dependente de informação e condicionante
+185;1099-6/05;Fabricação de produtos para infusão (chá, mate, etc.) ;Atividade econômica dependente de informação e condicionante
+186;2029-1/00;Fabricação de produtos químicos orgânicos não especificados anteriormente;Atividade econômica dependente de informação e condicionante
+187;2061-4/00;Fabricação de sabões e detergentes sintéticos ;Nível de Risco III
+188;1053-8/00;Fabricação de sorvetes e outros gelados comestíveis ;Nível de Risco III
+189;1033-3/02;Fabricação de sucos de frutas, hortaliças e legumes, exceto concentrados;Atividade econômica dependente de informação e condicionante
+190;2071-1/00;Fabricação de tintas, vernizes, esmaltes e lacas ;Atividade econômica dependente de informação e condicionante
+191;5620-1/04;Fornecimento de alimentos preparados preponderantemente para consumo domiciliar ;Nível de Risco II
+192;5620-1/01;Fornecimento de alimentos preparados preponderantemente para empresas ;Nível de Risco III
+193;5510-8/01;Hotéis;Nível de Risco II
+194;8122-2/00;Imunização e controle de pragas urbanas ;Nível de Risco III
+195;8711-5/02;Instituições de longa permanência para idosos ;Nível de Risco III
+196;8423-0/00;Justiça ;Nível de Risco I
+197;8640-2/02;Laboratórios clínicos ;Nível de Risco III
+198;8640-2/01;Laboratórios de anatomia patológica e citológica ;Nível de Risco III
+199;5611-2/03;Lanchonetes, casas de chá, de sucos e similares ;Nível de Risco II
+200;9601-7/01;Lavanderias;Atividade econômica dependente de informação e condicionante
+201;3312-1/03;Manutenção e reparação de aparelhos eletromédicos e eletroterapêuticos e equipamentos de irradiação;Atividade econômica dependente de informação e condicionante
+202;1062-7/00;Moagem de trigo e fabricação de derivados ;Nível de Risco III
+203;1069-4/00;Moagem e fabricação de produtos de origem vegetal não especificados anteriormente ;Atividade econômica dependente de informação e condicionante
+204;5510-8/03;Motéis;Nível de Risco II
+205;8730-1/01;Orfanatos;Nível de Risco III
+206;8690-9/99;Outras atividades de atenção à saúde humana não especificadas anteriormente;Atividade econômica dependente de informação e condicionante
+207;5590-6/99;"Outros alojamentos não especificados anteriormente
+";Nível de Risco II
+208;4721-1/02;Padaria e confeitaria com predominância de revenda ;Nível de Risco II
+209;9321-2/00;Parques de diversão e parques temáticos ;Atividade econômica dependente de informação e condicionante
+210;4722-9/02;Peixaria;Nível de Risco II
+211;7210-0/00;Pesquisa e desenvolvimento experimental em ciências físicas e naturais ;Atividade econômica dependente de informação e condicionante
+212;0892-4/03;Refino e outros tratamentos do sal ;Nível de Risco III
+213;5611-2/01;Restaurantes e similares ;Nível de Risco II
+214;3250-7/09;Serviço de laboratório óptico ;Nível de Risco III
+215;5612-1/00;"Serviços ambulantes de alimentação
+";Nível de Risco II
+216;5620-1/02;Serviços de alimentação para eventos e recepções - bufê ;Nível de Risco II
+217;8640-2/14;Serviços de bancos de células e tecidos humanos ;Nível de Risco III
+218;9603-3/02;Serviços de cremação ;Nível de Risco I
+219;8640-2/05;Serviços de diagnóstico por imagem com uso de radiação ionizante, exceto tomografia ;Nível de Risco III
+220;8640-2/07;Serviços de diagnóstico por imagem sem uso de radiação ionizante, exceto ressonância magnética;Nível de Risco III
+221;8640-2/09;Serviços de diagnóstico por métodos ópticos - endoscopia e outros exames análogos ;Nível de Risco III
+222;8640-2/08;Serviços de diagnóstico por registro gráfico - ECG, EEG e outros exames análogos;Nível de Risco III
+223;8640-2/03;Serviços de diálise e nefrologia ;Nível de Risco III
+224;5320-2/02;Serviços de entrega rápida ;Nível de Risco I
+225;9603-3/04;Serviços de funerárias ;Nível de Risco II
+226;8640-2/12;Serviços de hemoterapia ;Nível de Risco III
+227;8640-2/13;Serviços de litotripsia;Nível de Risco III
+228;5320-2/01;Serviços de malote não realizados pelo Correio Nacional ;Nível de Risco I
+229;3250-7/06;Serviços de prótese dentária ;Nível de Risco II
+230;8640-2/10;Serviços de quimioterapia ;Nível de Risco III
+231;8640-2/11;Serviços de radioterapia;Nível de Risco III
+232;8622-4/00;Serviços de remoção de pacientes, exceto os serviços móveis de atendimento a urgências;Nível de Risco II
+233;8640-2/06;Serviços de ressonância magnética;Nível de Risco III
+234;9603-3/03;Serviços de sepultamento ;Nível de Risco I
+235;9603-3/05;Serviços de somatoconservação ;Nível de Risco III
+236;9609-2/06;Serviços de tatuagem e colocação de piercing;Nível de Risco III
+237;8640-2/04;Serviços de tomografia ;Nível de Risco III
+238;8630-5/06;Serviços de vacinação e imunização humana;Nível de Risco III
+239;8621-6/02;Serviços móveis de atendimento a urgências, exceto por UTI móvel;Nível de Risco III
+240;5222-2/00;Terminais rodoviários e ferroviários ;Nível de Risco I
+241;7120-1/00;Testes e análises técnicas ;Atividade econômica dependente de informação e condicionante
+242;9601-7/03;Toalheiros;Atividade econômica dependente de informação e condicionante
+243;1081-3/02;Torrefação e moagem de café ;Nível de Risco II
+244;5120-0/00;Transporte aéreo de carga;Atividade econômica dependente de informação e condicionante
+245;4911-6/00;Transporte ferroviário de carga ;Atividade econômica dependente de informação e condicionante
+246;5021-1/02;Transporte por navegação interior de carga, intermunicipal, interestadual e internacional, exceto travessia ;Atividade econômica dependente de informação e condicionante
+247;5021-1/01;Transporte por navegação interior de carga, municipal, exceto travessia ;Atividade econômica dependente de informação e condicionante
+248;4930-2/02;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional ;Atividade econômica dependente de informação e condicionante
+249;4930-2/01;Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal ;Atividade econômica dependente de informação e condicionante
+250;4930-2/03;Transporte rodoviário de produtos perigosos;Atividade econômica dependente de informação e condicionante
+251;8621-6/01;UTI móvel;Nível de Risco III
