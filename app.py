@@ -37,6 +37,10 @@ filtered_df = df[df.codigoCnae.isin(label_to_filter)]
 riscos = filtered_df.classificacaoRisco.to_list()
 
 def risco_estabelecimento():
+    
+    if not riscos:
+        classificacaoRisco = 'Selecione as atividades realizadas pelo estabelecimento'
+        return classificacaoRisco        
     if 'Nível de Risco III' in riscos:
         classificacaoRisco = 'Nível de Risco III'
         return classificacaoRisco
