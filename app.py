@@ -3,14 +3,14 @@
 import streamlit as st
 import pandas as pd
 
-cnaeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.xlsx?raw=true"
+cnaeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv"
 #riscoURL =
 
 @st.cache
 def load_data():
     # carrega os dados das atividades
 
-    data = pd.read_excel(cnaeURL, sheet_name='visa', dtype='object', index_col='codigoCnae')
+    data = pd.read_csv(cnaeURL, dtype='object', index_col='codigoCnae', encoding='utf8')
 
     return data
 
