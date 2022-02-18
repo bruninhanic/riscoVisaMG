@@ -15,7 +15,7 @@ def load_data():
     return data
 
 df = load_data()
-labels = df['codigoCnae'].to_list()
+labels = df['codigoCnae'].tolist()
 
 #SIDEBAR
 
