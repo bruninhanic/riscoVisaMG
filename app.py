@@ -34,6 +34,8 @@ st.sidebar.markdown('Para a correta classificação de risco, você deve informa
 #Aplicação do filtro no dataframe e classificação do risco
 filtered_df = df[df.index.isin(label_to_filter)]
 
+filtered_df = filtered_df[['descricaoCnae','classificacaoRisco']]
+
 riscos = filtered_df.classificacaoRisco.to_list()
 
 def risco_estabelecimento():
