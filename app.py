@@ -266,4 +266,4 @@ st.text_area('Risco do estabelecimento:', value=classificacaoRisco)
 filtered_df = filtered_df[['classificacaoRisco']]
 st.write('Riscos das atividades:', filtered_df)
 
-st.text_area('Este projeto encontra-se em fase de deste. A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
+st.markdown('Este projeto encontra-se em fase de deste. A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
