@@ -54,8 +54,7 @@
 4623-1/05;Comércio atacadista de cacau ;Nível de Risco II;;
 4621-4/00;Comércio atacadista de café em grão ;Nível de Risco II;;
 4637-1/01;Comércio atacadista de café torrado, moído e solúvel ;Nível de Risco II;;
-4634-6/01;"Comércio atacadista de carnes bovinas e suínas e derivados 
-";Nível de Risco II;;
+4634-6/01;FComércio atacadista de carnes bovinas e suínas e derivados ;Nível de Risco II;;
 4634-6/99;Comércio atacadista de carnes e derivados de outros animais;Nível de Risco II;;
 4632-0/01;Comércio atacadista de cereais e leguminosas beneficiados ;Nível de Risco II;;
 4632-0/03;Comércio atacadista de cereais e leguminosas beneficiados, farinhas, amidos e féculas, com atividade de fracionamento e acondicionamento associada ;Nível de Risco III;;
@@ -88,8 +87,7 @@
 4637-1/99;Comércio atacadista especializado em outros produtos alimentícios não especificados anteriormente ;Nível de Risco II;;
 4774-1/00;Comércio varejista de artigos de óptica ;Nível de Risco I;;
 4773-3/00;Comércio varejista de artigos médicos e ortopédicos ;Atividade econômica dependente de informação e condicionante;21;Há comercialização de produtos para saúde de uso profissional?
-4722-9/01;"Comércio varejista de carnes - açougues
-";Atividade econômica dependente de informação e condicionante;25;Há atividade de transformação artesanal e/ou autosserviço?
+4722-9/01;Comércio varejista de carnes - açougues;Atividade econômica dependente de informação e condicionante;25;Há atividade de transformação artesanal e/ou autosserviço?
 4772-5/00;Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal ;Nível de Risco II;;
 4724-5/00;Comércio varejista de hortifrutigranjeiros;Nível de Risco II;;
 4721-1/03;Comércio varejista de laticínios e frios ;Nível de Risco II;;
@@ -208,8 +206,7 @@
 5510-8/03;Motéis;Nível de Risco II;;
 8730-1/01;Orfanatos;Nível de Risco III;;
 8690-9/99;Outras atividades de atenção à saúde humana não especificadas anteriormente;Atividade econômica dependente de informação e condicionante;39;Há realização de procedimentos invasivos e/ou procedimento com utilização anestesia e sedação ou uso de radiação ionizante?
-5590-6/99;"Outros alojamentos não especificados anteriormente
-";Nível de Risco II;;
+5590-6/99;Outros alojamentos não especificados anteriormente;Nível de Risco II;;
 4721-1/02;Padaria e confeitaria com predominância de revenda ;Nível de Risco II;;
 9321-2/00;Parques de diversão e parques temáticos ;Atividade econômica dependente de informação e condicionante;41;O estabelecimento possui piscina?
 4722-9/02;Peixaria;Nível de Risco II;;
@@ -217,8 +214,7 @@
 0892-4/03;Refino e outros tratamentos do sal ;Nível de Risco III;;
 5611-2/01;Restaurantes e similares ;Nível de Risco II;;
 3250-7/09;Serviço de laboratório óptico ;Nível de Risco III;;
-5612-1/00;"Serviços ambulantes de alimentação
-";Nível de Risco II;;
+5612-1/00;Serviços ambulantes de alimentação;Nível de Risco II;;
 5620-1/02;Serviços de alimentação para eventos e recepções - bufê ;Nível de Risco II;;
 8640-2/14;Serviços de bancos de células e tecidos humanos ;Nível de Risco III;;
 9603-3/02;Serviços de cremação ;Nível de Risco I;;
