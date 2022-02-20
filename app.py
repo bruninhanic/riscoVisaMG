@@ -19,7 +19,7 @@ def load_atividade():
     atividade = pd.read_csv(atividadeURL,
                         dtype={'codigoCnae': 'object', 'descricaoCnae': 'object'},
                         sep=';', encoding='utf8', on_bad_lines='skip', engine='c', header=0)
-    print(atividade)
+
     dAtividade = dict([(i, j) for i, j in zip(atividade.codigoCnae, atividade.descricaoCnae)])
     return dAtividade
 
@@ -235,7 +235,7 @@ respostas = list()
 riscosinfo = list()
 
 if descPerguntas:
-    st.markdown("Responda à(s) pergunta(s) para concluir a classificação do risco:{}".format(len(descPerguntas)))
+    st.markdown("Responda à(s) pergunta(s) para concluir a classificação do risco:")
 
 
     for i in descPerguntas:
