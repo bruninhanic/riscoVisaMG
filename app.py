@@ -10,19 +10,38 @@ perguntaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/perguntas.cs
 
 respostaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/respostaRisco.csv"
 
+atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv?raw=True"
+
 @st.cache
-def load_data():
+
+def load_atividade():
     # carrega os dados das atividades
+    atividade = pd.read_csv(atividadeURL,
+                        dtype={'codigoCnae': 'object', 'descricaoCnae': 'object'},
+                        sep=';', encoding='utf8', on_bad_lines='skip', engine='c', header=0)
+    print(atividade)
+    dAtividade = dict([(i, j) for i, j in zip(atividade.codigoCnae, atividade.descricaoCnae)])
+    return dAtividade
 
-    col_names = ['codigoCnae', 'classificacaoRisco', 'idPergunta']
-    data = pd.read_csv(riscoURL, names=col_names,
+dAtividade = load_atividade()
+
+def load_data():
+    # carrega os dados de risco
+
+    data = pd.read_csv(riscoURL,
                        dtype={'codigoCnae':'object', 'classificacaoRisco':'object', 'idPergunta':'object'},
-                       index_col='codigoCnae', sep=';', encoding='utf8')
+                       sep=';', encoding='utf8', header=0)
 
+    data['descricaoCnae'] = data['codigoCnae'].map(dAtividade)
+    data['codDesc'] = (data.codigoCnae + " - " + data.descricaoCnae)
+
+    data.set_index('codigoCnae', inplace=True)
     return data
 
 df = load_data()
-labels = sorted(df.index.tolist())
+
+
+labels = sorted(df.codDesc.tolist())
 
 
 def load_perguntas():
@@ -62,7 +81,7 @@ st.sidebar.markdown(
     'Para a correta classificação de risco, você deve informar todas as atividades sujeitas a controle sanitário.')
 
 #Exibição das perguntas
-filtered_df = df[df.index.isin(label_to_filter)]
+filtered_df = df[df.codDesc.isin(label_to_filter)]
 
 idPerguntas = list()
 for item in filtered_df.idPergunta:
@@ -263,7 +282,9 @@ st.markdown(f"""
             Para o estabelecimento que realiza as atividades classificadas como **{", ".join(label_to_filter)}**, o risco sanitário do estabelecimento é:""")
 st.text_area('Risco do estabelecimento:', value=classificacaoRisco)
 
-filtered_df = filtered_df[['classificacaoRisco']]
+filtered_df = filtered_df[['descricaoCnae', 'classificacaoRisco']]
 st.write('Riscos das atividades:', filtered_df)
 
-st.markdown('Este projeto encontra-se em fase de teste. A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
+st.markdown('ATENÇÃO:')
+st.markdown('Este projeto encontra-se em fase de teste.')
+st.markdown('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
