@@ -77,9 +77,11 @@ label_to_filter = st.multiselect(
     'Escolha as atividades:',
     labels
     )
-# Informação no rodapé do sidebar
+# Informação
+st.caption(' ')
 st.caption(
-    'Para a correta classificação de risco, você deve informar todas as atividades sujeitas a controle sanitário.')
+    '** Para a correta classificação de risco, você deve informar todas as atividades sujeitas a controle sanitário. **')
+st.caption(' ')
 
 #Exibição das perguntas
 filtered_df = df[df.codDesc.isin(label_to_filter)]
@@ -235,13 +237,15 @@ drespostas = {'10NÃO': 'Nível de Risco II',
 respostas = list()
 riscosinfo = list()
 
+st.text(' ')
 if descPerguntas:
-    st.markdown("Responda à(s) pergunta(s) para concluir a classificação do risco:")
+    st.text("Responda à(s) pergunta(s) para concluir a classificação do risco:")
 
 
     for i in descPerguntas:
         if i != None:
             option = st.radio(f"{i}", options=['SIM', 'NÃO'])
+            st.text(' ')
             p=str(i).split(sep='-')[0]
             resposta=(p+option)
             respostas.append(resposta)
@@ -279,12 +283,14 @@ def risco_estabelecimento():
 
 
 classificacaoRisco = risco_estabelecimento()
-st.text('')
+st.text(' ')
 st.markdown(f"""
                 Para o estabelecimento que realiza as atividades classificadas como **{", ".join(label_to_filter)}**, o risco sanitário do estabelecimento é:""")
-st.text_area('Riscos do estabelecimento:', value=classificacaoRisco)
+st.text_area('Risco do estabelecimento:', value=classificacaoRisco)
+st.text(' ')
 
 filtered_df = filtered_df[['descricaoCnae', 'classificacaoRisco']]
+filtered_df.columns = ['Atividade (subclasse CNAE)', 'Risco da Atividade']
 
 
 st.text('')
