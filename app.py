@@ -1,8 +1,8 @@
 # Importar Bibliotecas
-from io import StringIO
 
 import streamlit as st
 import pandas as pd
+
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
@@ -19,7 +19,6 @@ def load_atividade():
     atividade = pd.read_csv(atividadeURL,
                         dtype={'codigoCnae': 'object', 'descricaoCnae': 'object'},
                         sep=';', encoding='utf8', on_bad_lines='skip', engine='c', header=0)
-
     dAtividade = dict([(i, j) for i, j in zip(atividade.codigoCnae, atividade.descricaoCnae)])
     return dAtividade
 
@@ -65,19 +64,21 @@ def load_respostas():
 
 respostas_df = load_respostas()
 
-# SIDEBAR
+#SIDEBAR
 
-st.sidebar.header('Informe as atividades do estabelecimento')
-info_sidebar = st.sidebar.empty()
+
+st.title('Consulta a classificação de risco sanitário do estabelecimento - Resolução SES/MG n. 7426/2021')
+
+# ESCOLHER ATIVIDADES
 
 # Checbox do cnae
-st.sidebar.header('Atividades Econômicas')
-label_to_filter = st.sidebar.multiselect(
+
+label_to_filter = st.multiselect(
     'Escolha as atividades:',
     labels
-)
+    )
 # Informação no rodapé do sidebar
-st.sidebar.markdown(
+st.caption(
     'Para a correta classificação de risco, você deve informar todas as atividades sujeitas a controle sanitário.')
 
 #Exibição das perguntas
@@ -229,7 +230,7 @@ drespostas = {'10NÃO': 'Nível de Risco II',
 
 
 # PRINCIPAL
-st.title('Consulta a classificação de risco sanitário do estabelecimento - Resolução SES/MG n. 7426/2021')
+
 
 respostas = list()
 riscosinfo = list()
@@ -276,15 +277,21 @@ def risco_estabelecimento():
         classificacaoRisco = 'Nível de Risco I'
         return classificacaoRisco
 
-classificacaoRisco = risco_estabelecimento()
 
+classificacaoRisco = risco_estabelecimento()
+st.text('')
 st.markdown(f"""
-            Para o estabelecimento que realiza as atividades classificadas como **{", ".join(label_to_filter)}**, o risco sanitário do estabelecimento é:""")
-st.text_area('Risco do estabelecimento:', value=classificacaoRisco)
+                Para o estabelecimento que realiza as atividades classificadas como **{", ".join(label_to_filter)}**, o risco sanitário do estabelecimento é:""")
+st.text_area('Riscos do estabelecimento:', value=classificacaoRisco)
 
 filtered_df = filtered_df[['descricaoCnae', 'classificacaoRisco']]
-st.write('Riscos das atividades:', filtered_df)
 
-st.markdown('ATENÇÃO:')
-st.markdown('Este projeto encontra-se em fase de teste.')
-st.markdown('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
+
+st.text('')
+st.text('Risco(s) da(s) atividade(s):')
+st.table(filtered_df)
+
+st.text('')
+st.caption('ATENÇÃO:')
+st.caption('Este projeto encontra-se em fase de teste.')
+st.caption('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
