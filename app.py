@@ -87,9 +87,11 @@ st.caption(' ')
 filtered_df = df[df.codDesc.isin(label_to_filter)]
 
 idPerguntas = list()
-for item in filtered_df.idPergunta:
+for i,j in zip(filtered_df.index, filtered_df.idPergunta):
+    item = (i+' - '+j)
     if item not in idPerguntas:
         idPerguntas.append(item)
+
 
 perguntas = {'1': 'A produção é artesanal?',
  '2': 'A produção é artesanal e diferente de conservas?',
@@ -138,8 +140,10 @@ perguntas = {'1': 'A produção é artesanal?',
 
 descPerguntas = list()
 for i in idPerguntas:
-    if i != '0':
-        p = i+"-"+perguntas[i]
+    n = i.split(' - ')[1]
+    a = i.split(' - ')[0]
+    if n != '0':
+        p = (a+" - "+n+" - "+perguntas[n])
         descPerguntas.append(p)
 
 #Definição do risco após a resposta
@@ -233,7 +237,6 @@ drespostas = {'10NÃO': 'Nível de Risco II',
 
 # PRINCIPAL
 
-
 respostas = list()
 riscosinfo = list()
 
@@ -244,9 +247,9 @@ if descPerguntas:
 
     for i in descPerguntas:
         if i != None:
-            option = st.radio(f"{i}", options=['SIM', 'NÃO'])
+            option = st.radio(f"Para a atividade {i.split(' - ')[0]}: {i.split(' - ')[2]} (pergunta {i.split(' - ')[1]})", options=['SIM', 'NÃO'])
             st.text(' ')
-            p=str(i).split(sep='-')[0]
+            p=str(i).split(sep=' - ')[1]
             resposta=(p+option)
             respostas.append(resposta)
 
