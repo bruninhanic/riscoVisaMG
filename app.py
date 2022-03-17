@@ -64,10 +64,13 @@ def load_respostas():
 
 respostas_df = load_respostas()
 
-#SIDEBAR
-
 
 st.title('Consulta a classificação de risco sanitário do estabelecimento - Resolução SES/MG n. 7426/2021')
+
+st.caption('Aviso 1:')
+st.caption('As classificações de risco da aplicação se referem ao disposto na Resolução SES/MG 7426/2021, aplicável aos estabelecimentos mineiros.')
+st.caption('Aviso 2:')
+st.caption('Caso exista norma específica em algum Município mineiro, pode haver diferença entre os resultados apresentados e a orientação fornecida pela Vigilância Sanitária Municipal concernente.')
 
 # ESCOLHER ATIVIDADES
 
@@ -305,10 +308,5 @@ st.caption('ATENÇÃO:')
 st.caption('Este projeto encontra-se em fase de teste.')
 st.caption('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
 
-st.text('')
-st.caption('Aviso 1:')
-st.caption('As classificações de risco da aplicação se referem ao disposto na Resolução SES/MG 7426/2021, aplicável aos estabelecimentos mineiros.')
-st.caption('Aviso 2:')
-st.caption('Caso exista norma específica em algum Município mineiro, pode haver diferença entre os resultados apresentados e a orientação fornecida pela Vigilância Sanitária Municipal concernente.')
-st.caption('Aviso 3:')
-st.caption('Se a circunstância que enseja a alteração não se refere a nenhum dos casos enumerados anteriormente, você pode submeter um pedido de alteração preenchendo a solicitação pelo formulário https://forms.office.com/r/ezyqvjzJJH')
+st.sidebar.write('Deseja solicitar alguma alteração?')
+st.sidebar.caption('Se a circunstância que enseja a alteração não se refere a nenhum dos casos enumerados nos Avisos 1 e 2, você pode submeter um pedido de alteração preenchendo a solicitação pelo formulário https://forms.office.com/r/ezyqvjzJJH')
