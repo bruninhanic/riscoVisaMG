@@ -311,5 +311,5 @@ st.caption('A utilização desta ferramenta não substitui a consulta aos Órgã
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
-c.write('Se a circunstância que enseja a alteração não se refere a nenhum dos casos enumerados nos Avisos 1 e 2, você pode submeter um pedido de alteração preenchendo a solicitação pelo formulário:')
+c.write('Se a circunstância que enseja a alteração não se refere a nenhum dos casos enumerados nos Avisos 1 e 2, você pode submeter um pedido de alteração, preenchendo a solicitação pelo formulário:')
 c.caption('https://forms.office.com/r/ezyqvjzJJH')
