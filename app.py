@@ -75,6 +75,7 @@ st.text('')
 
 # ESCOLHER ATIVIDADES
 
+st.markdown('Vamos começar!')
 # Checbox do cnae
 
 label_to_filter = st.multiselect(
