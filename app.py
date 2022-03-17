@@ -72,6 +72,10 @@ st.markdown('Aviso 1:')
 st.caption('As classificações de risco da aplicação se referem ao disposto na Resolução SES/MG 7426/2021, aplicável aos estabelecimentos mineiros.')
 st.markdown('Aviso 2:')
 st.caption('Caso exista norma específica em algum Município mineiro, pode haver diferença entre os resultados apresentados e a orientação fornecida pela Vigilância Sanitária Municipal concernente.')
+st.markdown('Aviso 3:')
+st.caption('Este projeto encontra-se em fase de teste e validação.')
+st.caption('Aviso 4:')
+st.caption('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
 st.text('')
 
 # ESCOLHER ATIVIDADES
@@ -307,9 +311,6 @@ st.text('Risco(s) da(s) atividade(s):')
 st.table(filtered_df)
 
 st.text('')
-st.caption('ATENÇÃO:')
-st.caption('Este projeto encontra-se em fase de teste.')
-st.caption('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
