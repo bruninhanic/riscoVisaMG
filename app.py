@@ -308,5 +308,5 @@ st.caption('ATENÇÃO:')
 st.caption('Este projeto encontra-se em fase de teste.')
 st.caption('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
 
-st.sidebar.write('Deseja solicitar alguma alteração?')
-st.sidebar.caption('Se a circunstância que enseja a alteração não se refere a nenhum dos casos enumerados nos Avisos 1 e 2, você pode submeter um pedido de alteração preenchendo a solicitação pelo formulário https://forms.office.com/r/ezyqvjzJJH')
+st.container.title('Deseja solicitar alguma alteração?')
+st.container.write('Se a circunstância que enseja a alteração não se refere a nenhum dos casos enumerados nos Avisos 1 e 2, você pode submeter um pedido de alteração preenchendo a solicitação pelo formulário https://forms.office.com/r/ezyqvjzJJH')
