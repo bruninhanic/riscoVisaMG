@@ -65,7 +65,7 @@ def load_respostas():
 respostas_df = load_respostas()
 
 
-st.title('Consulta a classificação de risco sanitário do estabelecimento - Resolução SES/MG n. 7426/2021')
+st.title('Consulta a classificação de risco sanitário de estabelecimentos segundo as normas sanitárias do Estado de Minas Gerais - Resolução SES/MG n. 7426/2021')
 
 st.markdown('Aviso 1:')
 st.caption('As classificações de risco da aplicação se referem ao disposto na Resolução SES/MG 7426/2021, aplicável aos estabelecimentos mineiros.')
