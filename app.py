@@ -309,5 +309,5 @@ st.caption('Este projeto encontra-se em fase de teste.')
 st.caption('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
 
 c = st.container()
-c.title('Deseja solicitar alguma alteração?')
+c.markdown('Deseja solicitar alguma alteração?')
 c.write('Se a circunstância que enseja a alteração não se refere a nenhum dos casos enumerados nos Avisos 1 e 2, você pode submeter um pedido de alteração preenchendo a solicitação pelo formulário https://forms.office.com/r/ezyqvjzJJH')
