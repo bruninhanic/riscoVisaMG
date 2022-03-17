@@ -66,6 +66,7 @@ respostas_df = load_respostas()
 
 
 st.header('Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais')
+st.text('Código de Saúde do Estado de Minas Gerais')
 st.text('Resolução SES/MG n. 7426/2021')
 
 st.markdown('Aviso 1:')
@@ -74,7 +75,7 @@ st.markdown('Aviso 2:')
 st.caption('Caso exista norma específica em algum Município mineiro, pode haver diferença entre os resultados apresentados e a orientação fornecida pela Vigilância Sanitária Municipal concernente.')
 st.markdown('Aviso 3:')
 st.caption('Este projeto encontra-se em fase de teste e validação.')
-st.caption('Aviso 4:')
+st.markdown('Aviso 4:')
 st.caption('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
 st.text('')
 
