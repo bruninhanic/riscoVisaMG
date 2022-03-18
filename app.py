@@ -48,7 +48,7 @@ def load_perguntas():
     col_names_perguntas = ['idPergunta', 'descricaoPergunta']
     perguntas_df = pd.read_csv(perguntaURL, encoding='latin1', sep=';', names=col_names_perguntas,
                                dtype={'idPergunta': 'object','descricaoPergunta': 'object'},
-                               index_col='idPergunta' )
+                               index_col='idPergunta', on_bad_lines='skip', engine='c' )
     return perguntas_df
 
 perguntas_df = load_perguntas()
