@@ -287,7 +287,7 @@ if descPerguntas:
             resposta=('46'+option)
             respostas.append(resposta)
             respostas.remove('1SIM')
-         if '47NÃO' in respostas:
+        if '47NÃO' in respostas:
             option = st.radio(f"Para a atividade 5120-0/00, realizada de forma artesanal: {perguntas['28']} (pergunta 28)", options=['SIM', 'NÃO'])
             resposta=('28'+option)
             respostas.append(resposta)
