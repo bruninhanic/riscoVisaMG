@@ -29,7 +29,7 @@ def load_data():
 
     data = pd.read_csv(riscoURL,
                        dtype={'codigoCnae':'object', 'classificacaoRisco':'object', 'idPergunta':'object'},
-                       sep=';', encoding='utf8', header=0)
+                       sep=';', encoding='utf8', header=0, engine='c')
 
     data['descricaoCnae'] = data['codigoCnae'].map(dAtividade)
     data['codDesc'] = (data.codigoCnae + " - " + data.descricaoCnae)
