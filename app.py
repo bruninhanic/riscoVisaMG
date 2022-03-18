@@ -183,7 +183,7 @@ drespostas = {'10NÃO': 'Nível de Risco I',
  '19NÃO': 'Nível de Risco I',
  '19SIM': 'Nível de Risco III',
  '1NÃO': 'Nível de Risco III',
- '1SIM': 'Nível de Risco II',
+ '1SIM': 'P46',
  '20NÃO': 'Nível de Risco I',
  '20SIM': 'Nível de Risco III',
  '21NÃO': 'Nível de Risco II',
@@ -240,6 +240,8 @@ drespostas = {'10NÃO': 'Nível de Risco I',
  '44SIM': 'Nível de Risco II',
  '45NÃO': 'Nível de Risco II',
  '45SIM': 'Nível de Risco III',
+ '46NÃO': 'Nível de Risco II',
+ '46SIM': 'Nível de Risco I',
  '4NÃO': 'Nível de Risco III',
  '4SIM': 'Nível de Risco I',
  '5NÃO': 'Nível de Risco III',
@@ -271,6 +273,12 @@ if descPerguntas:
             p=str(i).split(sep=' - ')[1]
             resposta=(p+option)
             respostas.append(resposta)
+            #atividades com dois condicionantes
+            if '1P28' in respostas:
+                option = st.radio(f"Para a atividade 1031-7/00, realizada de forma artesanal: {perguntas[46]} (pergunta 46))", options=['SIM', 'NÃO'])
+                resposta=('46'+option)
+                respostas.append(resposta)
+                respostas.remove('1P28')                
 
     for i in respostas:
         risco=drespostas[i]
