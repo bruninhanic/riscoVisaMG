@@ -278,8 +278,9 @@ if descPerguntas:
             st.text(' ')
             p=str(i).split(sep=' - ')[1]
             resposta=(p+option)
-            respostas.append(resposta)
-            respostas = set(respostas)
+            if resposta not in respostas:
+                respostas.append(resposta)
+            
          
     #atividades com dois condicionantes
     for i in respostas:
