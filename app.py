@@ -277,10 +277,10 @@ if descPerguntas:
     #atividades com dois condicionantes
     for i in respostas:
         if '1SIM' in respostas:
-            option = st.radio(f"Para a atividade 1031-7/00, realizada de forma artesanal: {perguntas['46']} (pergunta 46))", options=['SIM', 'NÃO'])
+            option = st.radio(f"Para a atividade 1031-7/00, realizada de forma artesanal: {perguntas['46']} (pergunta 46)", options=['SIM', 'NÃO'])
             resposta=('46'+option)
             respostas.append(resposta)
-            respostas.remove('1P28')                
+            respostas.remove('1SIM')                
 
     for i in respostas:
         risco=drespostas[i]
