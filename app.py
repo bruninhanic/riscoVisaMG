@@ -274,7 +274,7 @@ if descPerguntas:
             resposta=(p+option)
             respostas.append(resposta)
             #atividades com dois condicionantes
-            if '1P28' in respostas:
+            if '1SIM' in respostas:
                 option = st.radio(f"Para a atividade 1031-7/00, realizada de forma artesanal: {perguntas[46]} (pergunta 46))", options=['SIM', 'NÃO'])
                 resposta=('46'+option)
                 respostas.append(resposta)
