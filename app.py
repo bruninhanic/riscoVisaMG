@@ -40,7 +40,7 @@ def load_data():
 df = load_data()
 
 
-labels = sorted(df.codDesc.tolist())
+labels = df.codDesc.tolist()
 
 
 def load_perguntas():
