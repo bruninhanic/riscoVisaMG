@@ -279,7 +279,7 @@ if descPerguntas:
             p=str(i).split(sep=' - ')[1]
             resposta=(p+option)
             respostas.append(resposta)
-            set(respostas)
+            respostas = set(respostas)
          
     #atividades com dois condicionantes
     for i in respostas:
