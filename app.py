@@ -288,10 +288,20 @@ if descPerguntas:
             respostas.append(resposta)
             respostas.remove('1SIM')
         if '47NÃO' in respostas:
-            option = st.radio(f"Para a atividade 5120-0/00, realizada de forma artesanal: {perguntas['28']} (pergunta 28)", options=['SIM', 'NÃO'])
+            option = st.radio(f"Para a atividade 5120-0/00, responda também: {perguntas['28']} (pergunta 28)", options=['SIM', 'NÃO'])
             resposta=('28'+option)
             respostas.append(resposta)
-            respostas.remove('47NÃO')    
+            respostas.remove('47NÃO')
+        if '48NÃO' in respostas:
+            option = st.radio(f"Para a atividade 4930-2/03, responda também: {perguntas['28']} (pergunta 28)", options=['SIM', 'NÃO'])
+            resposta=('28'+option)
+            respostas.append(resposta)
+            respostas.remove('48NÃO') 
+        if '49NÃO' in respostas:
+            option = st.radio(f"Para a(s) atividade(s) 4911-6/00 e/ou 4930-2/01 e/ou 4930-2/02, responda também: {perguntas['28']} (pergunta 28)", options=['SIM', 'NÃO'])
+            resposta=('28'+option)
+            respostas.append(resposta)
+            respostas.remove('49NÃO')  
 
     for i in respostas:
         risco=drespostas[i]
