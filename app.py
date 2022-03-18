@@ -46,7 +46,7 @@ labels = df.codDesc.tolist()
 def load_perguntas():
     # carrega os dados das perguntas
     col_names_perguntas = ['idPergunta', 'descricaoPergunta']
-    perguntas_df = pd.read_csv(perguntaURL, encoding='utf8', sep=';', names=col_names_perguntas,
+    perguntas_df = pd.read_csv(perguntaURL, encoding='latin1', sep=';', names=col_names_perguntas,
                                dtype={'idPergunta': 'object','descricaoPergunta': 'object'},
                                index_col='idPergunta' )
     return perguntas_df
