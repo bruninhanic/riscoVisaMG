@@ -138,10 +138,10 @@ perguntas = {'1': 'A produção é artesanal?',
  '33': 'Há aluguel de produtos para saúde de uso profissional?',
  '34': 'Há processamento de produtos para saúde (materiais médico hospitalares)?',
  '35': 'Ocorre o envase ou empacotamento de medicamentos, gases medicinais, gases substâncias ativas, produtos de higiene, perfumes, cosméticos, saneantes, insumos para fabricação dos mesmos, produtos para saúde ou alimentos (exceto de origem animal)?',
- '36': 'Há realização de procedimentos invasivos? ',
- '37': 'Há realização de procedimentos invasivos?',
- '38': 'Há realização de procedimentos invasivos?',
- '39': 'Há realização de procedimentos invasivos ou uso de radiação ionizante?',
+ '36': 'Há realização de procedimentos invasivos e/ou procedimento com utilização de anestesia e sedação?',
+ '37': 'Há realização de procedimentos invasivos e/ou procedimento com utilização de anestesia e sedação?',
+ '38': 'Há realização de procedimentos invasivos e/ou procedimento com utilização de anestesia e sedação?',
+ '39': 'Há realização de procedimentos invasivos e/ou procedimento com utilização anestesia e sedação ou uso de radiação ionizante?',
  '40': 'O estabelecimento possui leitos de internação?',
  '41': 'O estabelecimento possui piscina?',
  '42': 'Há processamento de roupas hospitalares?',
@@ -152,6 +152,8 @@ perguntas = {'1': 'A produção é artesanal?',
  '47': 'Há transporte de medicamentos, gases medicinais, gases substâncias ativas, produtos de higiene, perfumes, cosméticos, saneantes, insumos para fabricação dos mesmos,  produtos para saúde ou material biológico humano?',
  '48': 'Há transporte de medicamentos, gases medicinais, produtos de higiene, perfumes, cosméticos, saneantes, insumos para fabricação dos mesmos ou produtos para saúde?',
  '49': 'Há transporte de medicamentos, gases medicinais, produtos de higiene, perfumes, cosméticos, saneantes, insumos para fabricação dos mesmos,  produtos para saúde ou material biológico humano?'}
+
+
 
 descPerguntas = list()
 for i in idPerguntas:
