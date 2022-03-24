@@ -86,7 +86,8 @@ st.subheader('Vamos começar!')
 
 label_to_filter = st.multiselect(
     'Escolha as atividades:',
-    labels
+    labels,
+    help='Clique na seta a direita e escolha todas as atividades realizadas pelo estabelecimento'
     )
 # Informação
 st.caption(' ')
