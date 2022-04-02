@@ -15,8 +15,12 @@ atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.c
 st.set_page_config(
     page_title='Risco VISA/MG', 
     page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico', 
-    layout='wide', 
-    initial_sidebar_state='collapsed', menu_items=None)
+    layout='centered', 
+    initial_sidebar_state='collapsed', 
+    menu_items={'Lista de atividades': 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.docx',
+                'Reporte um erro/solicitação':'https://forms.office.com/r/ezyqvjzJJH'
+    }
+)
 
 @st.cache
 
