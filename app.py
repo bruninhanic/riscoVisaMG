@@ -140,8 +140,6 @@ perguntas = {'1': 'A produção é artesanal?',
  '34': 'Há processamento de produtos para saúde (materiais médico hospitalares)?',
  '35': 'Ocorre o envase ou empacotamento de medicamentos, gases medicinais, gases substâncias ativas, produtos de higiene, perfumes, cosméticos, saneantes, insumos para fabricação dos mesmos, produtos para saúde ou alimentos (exceto de origem animal)?',
  '36': 'Há realização de procedimentos invasivos e/ou procedimento com utilização de anestesia e sedação?',
- '37': 'Há realização de procedimentos invasivos e/ou procedimento com utilização de anestesia e sedação?',
- '38': 'Há realização de procedimentos invasivos e/ou procedimento com utilização de anestesia e sedação?',
  '39': 'Há realização de procedimentos invasivos e/ou procedimento com utilização anestesia e sedação ou uso de radiação ionizante?',
  '40': 'O estabelecimento possui leitos de internação?',
  '41': 'O estabelecimento possui piscina?',
@@ -152,8 +150,8 @@ perguntas = {'1': 'A produção é artesanal?',
  '46': 'A produção é exclusivamente de polpa de fruta para bebida?',
  '47': 'Há transporte de medicamentos, gases medicinais, gases substâncias ativas, produtos de higiene, perfumes, cosméticos, saneantes, insumos para fabricação dos mesmos,  produtos para saúde ou material biológico humano?',
  '48': 'Há transporte de medicamentos, gases medicinais, produtos de higiene, perfumes, cosméticos, saneantes, insumos para fabricação dos mesmos ou produtos para saúde?',
- '49': 'Há transporte de medicamentos, gases medicinais, produtos de higiene, perfumes, cosméticos, saneantes, insumos para fabricação dos mesmos,  produtos para saúde ou material biológico humano?'}
-
+ '49': 'Há transporte de medicamentos, gases medicinais, produtos de higiene, perfumes, cosméticos, saneantes, insumos para fabricação dos mesmos,  produtos para saúde ou material biológico humano?',
+ '50': 'O resultado do exercício da atividade inclui a utilização produtos sujeitos ao controle sanitário do SNVS e/ou realizam serviços de radiologia diagnóstica?'}
 
 
 descPerguntas = list()
@@ -253,6 +251,8 @@ drespostas = {'10NÃO': 'Nível de Risco I',
  '49SIM': 'Nível de Risco III',
  '4NÃO': 'Nível de Risco III',
  '4SIM': 'Nível de Risco I',
+ '50SIM': 'Nível de Risco III',
+ '50NÃO': 'Nível de Risco II',             
  '5NÃO': 'Nível de Risco III',
  '5SIM': 'Nível de Risco II',
  '6NÃO': 'Nível de Risco III',
@@ -293,7 +293,7 @@ if descPerguntas:
             respostas.append(resposta)
             respostas.remove('1SIM')
         if '47NÃO' in respostas:
-            option = st.radio(f"Para a atividade 5120-0/00, responda também: {perguntas['28']} (pergunta 28)", options=['SIM', 'NÃO'])
+            option = st.radio(f"Para a atividade 5021-1/01, 5021-1/02, 5120-0/00, responda também: {perguntas['28']} (pergunta 28)", options=['SIM', 'NÃO'])
             resposta=('28'+option)
             respostas.append(resposta)
             respostas.remove('47NÃO')
