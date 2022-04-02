@@ -66,7 +66,7 @@ respostas_df = load_respostas()
 
 st.set_page_config(
      page_title='Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais',
-     page_icon='',
+     page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico',
      layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
