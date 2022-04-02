@@ -12,6 +12,12 @@ respostaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/respostaRisc
 
 atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv?raw=True"
 
+st.set_page_config(
+    page_title='Risco VISA/MG', 
+    page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico', 
+    layout='wide', 
+    initial_sidebar_state='collapsed', menu_items=None)
+
 @st.cache
 
 def load_atividade():
@@ -63,12 +69,6 @@ def load_respostas():
     return respostas_df
 
 respostas_df = load_respostas()
-
-st.set_page_config(
-    page_title='Risco VISA/MG', 
-    page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico', 
-    layout='wide', 
-    initial_sidebar_state='collapsed', menu_items=None)
 
 st.header('Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais')
 st.text('Código de Saúde do Estado de Minas Gerais')
