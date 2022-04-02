@@ -65,7 +65,7 @@ def load_respostas():
 respostas_df = load_respostas()
 
 st.set_page_config(
-     page_title='Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais',
+     page_title='Risco VISA/MG',
      page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico',
      layout="wide"
  )
