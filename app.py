@@ -67,12 +67,7 @@ respostas_df = load_respostas()
 st.set_page_config(
      page_title='Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais',
      page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico',
-     layout="wide",
-     menu_items={
-         'Atividades': 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.docx',
-         'Solicitações': 'https://forms.office.com/r/ezyqvjzJJH',
-         'Sobre': 'Esta aplicação permite que você saiba qual o nível de risco sanitário do estabelecimento, de acordo com a legislação mineira.'
-     }
+     layout="wide"
  )
 
 st.header('Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais')
