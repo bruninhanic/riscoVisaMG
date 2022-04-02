@@ -70,8 +70,8 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
-         'Encontre as atividades': '',
-         'Reporte um erro/solicitação': 'https://forms.office.com/r/ezyqvjzJJH',
+         'Atividades': 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.docx',
+         'Solicitações': 'https://forms.office.com/r/ezyqvjzJJH',
          'Sobre': 'Esta aplicação permite que você saiba qual o nível de risco sanitário do estabelecimento, de acordo com a legislação mineira.'
      }
  )
