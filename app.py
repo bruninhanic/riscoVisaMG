@@ -64,6 +64,17 @@ def load_respostas():
 
 respostas_df = load_respostas()
 
+st.set_page_config(
+     page_title='Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais',
+     page_icon='',
+     layout="wide",
+     initial_sidebar_state="expanded",
+     menu_items={
+         'Encontre as atividades': '',
+         'Reporte um erro/solicitação': 'https://forms.office.com/r/ezyqvjzJJH',
+         'Sobre': 'Esta aplicação permite que você saiba qual o nível de risco sanitário do estabelecimento, de acordo com a legislação mineira.'
+     }
+ )
 
 st.header('Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais')
 st.text('Código de Saúde do Estado de Minas Gerais')
@@ -293,7 +304,7 @@ if descPerguntas:
             respostas.append(resposta)
             respostas.remove('1SIM')
         if '47NÃO' in respostas:
-            option = st.radio(f"Para a atividade 5021-1/01, 5021-1/02, 5120-0/00, responda também: {perguntas['28']} (pergunta 28)", options=['SIM', 'NÃO'])
+            option = st.radio(f"Para a atividade 5021-1/01 e/ou 5021-1/02 e/ou 5120-0/00, responda também: {perguntas['28']} (pergunta 28)", options=['SIM', 'NÃO'])
             resposta=('28'+option)
             respostas.append(resposta)
             respostas.remove('47NÃO')
