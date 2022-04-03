@@ -377,8 +377,11 @@ file_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaM
 file = 'AtividadesVisaMGAbril2022.pdf'
 request.urlretrieve(file_url , file)
 
+with open(file, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+
 st.download_button(label="Atividades",
-                    data=file,
+                    data=PDFbyte,
                     file_name="AtividadesVisaMGAbril2022.pdf",
                     mime='application/octet-stream')
 
