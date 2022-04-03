@@ -77,7 +77,6 @@ def load_respostas():
 
 respostas_df = load_respostas()
 
-st.image('https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico', width=150)
 st.header('Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais')
 st.text('Código de Saúde do Estado de Minas Gerais')
 st.text('Resolução SES/MG n. 7426/2021')
