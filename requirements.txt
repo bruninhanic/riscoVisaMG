@@ -3,5 +3,3 @@ streamlit==1.5.1
 click==8.0.4
 st-annotated-text==3.0.0
 urllib3==1.26.9
-pycurl==7.45.1
-libcurl==7.19.0
