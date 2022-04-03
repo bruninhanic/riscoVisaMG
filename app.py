@@ -372,7 +372,17 @@ st.table(filtered_df)
 
 st.text('')
 
-ativ = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.docx'
+ativ = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaMGAbril2022.pdf'
+
+import streamlit as st
+
+with open(ativ, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+
+st.download_button(label="Atividades",
+                    data=PDFbyte,
+                    file_name="AtividadesVisaMGAbril2022.pdf",
+                    mime='application/octet-stream')
 d = st.container()
 d.subheader('Faça o download da relação de atividades sujeitas a Vigilância Sanitária, de acordo com a legislação mineira.')
 d.download_button('Atividades', data=ativ)
