@@ -376,10 +376,10 @@ st.text('')
 
 file_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt"
   
-arquivo = requests.get(file_url, stream = True) 
-  
-with open(arquivo,"r") as f: 
-    ativ = f.read() 
+file = 'AtividadesVisaMG.txt'
+request.urlretrieve(file_url, file)
+
+ativ = file.read()
     
 st.download_button(label="Atividades",
                     data=ativ,
