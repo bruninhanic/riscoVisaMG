@@ -372,13 +372,16 @@ st.table(filtered_df)
 
 st.text('')
 
+file_path='https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaMGAbril2022.pdf'
+with open(file_path,"rb") as f:
+    base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+
+pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
+    
 with open("https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaMGAbril2022.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
-st.download_button(label="Atividades", 
-        data=PDFbyte,
-        file_name="AtividadesVisaMGAbril2022.pdf",
-        mime='application/octet-stream')
+st.markdown(pdf_display, unsafe_allow_html=True)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
