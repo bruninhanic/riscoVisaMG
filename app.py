@@ -378,12 +378,12 @@ file_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValida
   
 r = requests.get(file_url, stream = True) 
   
-with open("AtividadesVisaAbril2022.pdf","wb") as pdf: 
-    pdf.write(r) 
+with open("AtividadesVisaAbril2022.txt","wb") as f: 
+    f.write(r) 
     
 st.download_button(label="Atividades",
                     data=pdf,
-                    file_name="AtividadesVisaMG.pdf",
+                    file_name="AtividadesVisaMG.txt",
                     mime='application/octet-stream')
 
 c = st.container()
