@@ -373,13 +373,20 @@ st.table(filtered_df)
 
 st.text('')
 
-arquivo = open('https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt','r')
-conteudo = arquivo.read()
+file_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf"
+  
+r = requests.get(file_url, stream = True) 
+  
+with open("AtividadesVisaAbril2022.pdf","wb") as pdf: 
+    for chunk in r.iter_content(chunk_size=1024): 
+ 
+         if chunk: 
+             pdf.write(chunk) 
     
 st.download_button(label="Atividades",
-                    data=conteudo,
-                    file_name="AtividadesVisaMG.txt",
-                    mime='text/csv')
+                    data=pdf,
+                    file_name="AtividadesVisaMG.pdf",
+                    mime='application/octet-stream')
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
