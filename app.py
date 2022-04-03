@@ -379,10 +379,9 @@ file_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaA
 file = 'AtividadesVisaMG.txt'
 request.urlretrieve(file_url, file)
 
-ativ = file.read()
     
 st.download_button(label="Atividades",
-                    data=ativ,
+                    data=file,
                     file_name="AtividadesVisaMG.txt",
                     mime='application/octet-stream')
 
