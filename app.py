@@ -3,6 +3,7 @@
 import streamlit as st
 import pandas as pd
 from annotated_text import annotated_text
+from urllib import request
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
@@ -372,16 +373,9 @@ st.table(filtered_df)
 
 st.text('')
 
-file_path='https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaMGAbril2022.pdf'
-with open(file_path,"rb") as f:
-    base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
-pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
-    
-with open("https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaMGAbril2022.pdf", "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
-
-st.markdown(pdf_display, unsafe_allow_html=True)
+file_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaMGAbril2022.pdf'
+file = 'AtividadesVisaMGAbril2022.pdf'
+request.urlretrieve(file_url , file)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
