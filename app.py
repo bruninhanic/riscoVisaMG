@@ -379,13 +379,12 @@ import streamlit as st
 with open(ativ, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
+d = st.container()
+d.subheader('Faça o download da relação de atividades sujeitas a Vigilância Sanitária, de acordo com a legislação mineira.')    
 st.download_button(label="Atividades",
                     data=PDFbyte,
                     file_name="AtividadesVisaMGAbril2022.pdf",
                     mime='application/octet-stream')
-d = st.container()
-d.subheader('Faça o download da relação de atividades sujeitas a Vigilância Sanitária, de acordo com a legislação mineira.')
-d.download_button('Atividades', data=ativ)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
