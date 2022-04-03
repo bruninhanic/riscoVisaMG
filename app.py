@@ -16,7 +16,7 @@ atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.c
 
 st.set_page_config(
     page_title='Risco VISA/MG', 
-    page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/visa.jpg', 
+    page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico', 
     layout='centered', 
     initial_sidebar_state='collapsed', 
     menu_items={'Get help': 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.docx',
@@ -77,7 +77,7 @@ def load_respostas():
 
 respostas_df = load_respostas()
 
-st.image('https://github.com/bruninhanic/riscoVisaMG/blob/main/visa.jpg', width=150)
+st.image(https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico', width=150)
 st.header('Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais')
 st.text('Código de Saúde do Estado de Minas Gerais')
 st.text('Resolução SES/MG n. 7426/2021')
