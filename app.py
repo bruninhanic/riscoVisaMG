@@ -375,11 +375,15 @@ st.text('')
 ativ = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaMGAbr2022.csv'
    
 d = st.container()
-d.subheader('Faça o download da relação de atividades sujeitas a Vigilância Sanitária, de acordo com a legislação mineira.')    
+d.subheader('Faça o download da relação de atividades sujeitas a Vigilância Sanitária, de acordo com a legislação mineira.') 
+
+with open("https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaMGAbril2022.pdf", "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+
 st.download_button(label="Atividades",
-                    data=ativ,
-                    file_name="AtividadesVisaMGAbril2022.csv",
-                    mime='text/csv')
+                    data=PDFbyte,
+                    file_name="AtividadesVisaMGAbril2022.pdf",
+                    mime='application/octet-stream')
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
