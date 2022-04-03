@@ -15,6 +15,9 @@ atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.c
 
 img = Image.open('https://github.com/bruninhanic/riscoVisaMG/blob/main/content_visa-selo.png')
 
+img = Image.composite(img, Image.new('RGB', img.size, 'white'), img).show()
+
+
 st.set_page_config(
     page_title='Risco VISA/MG', 
     page_icon=img, 
