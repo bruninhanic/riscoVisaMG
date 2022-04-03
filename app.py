@@ -382,7 +382,7 @@ with open(file, "rb") as pdf_file:
 
 st.download_button(label="Atividades",
                     data=PDFbyte,
-                    file_name="AtividadesVisaMGAbril2022.pdf",
+                    file_name="AtividadesVisaMG.pdf",
                     mime='application/octet-stream')
 
 c = st.container()
