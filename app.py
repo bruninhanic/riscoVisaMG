@@ -13,10 +13,7 @@ respostaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/respostaRisc
 
 atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv?raw=True"
 
-img = Image.open('https://github.com/bruninhanic/riscoVisaMG/blob/main/content_visa-selo.png')
-
-img = Image.composite(img, Image.new('RGB', img.size, 'white'), img).show()
-
+img = Image.open('https://github.com/bruninhanic/riscoVisaMG/blob/main/visa.jpg')
 
 st.set_page_config(
     page_title='Risco VISA/MG', 
