@@ -2,6 +2,7 @@
 
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
@@ -12,9 +13,11 @@ respostaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/respostaRisc
 
 atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv?raw=True"
 
+img = Image.open('https://github.com/bruninhanic/riscoVisaMG/blob/main/content_visa-selo.png')
+
 st.set_page_config(
     page_title='Risco VISA/MG', 
-    page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico', 
+    page_icon=img, 
     layout='centered', 
     initial_sidebar_state='collapsed', 
     menu_items={'Get help': 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.docx',
