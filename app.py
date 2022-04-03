@@ -379,7 +379,7 @@ file_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaA
 arquivo = requests.get(file_url, stream = True) 
   
 with open(arquivo,"r") as f: 
-    ativ = f.write(r) 
+    ativ = f.read() 
     
 st.download_button(label="Atividades",
                     data=ativ,
