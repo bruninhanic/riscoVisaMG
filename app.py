@@ -374,11 +374,12 @@ st.text('')
 
 ativ = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaMGAbril2022.pdf'
 
-import streamlit as st
 
 with open(ativ, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
+PDFbyte    
+    
 d = st.container()
 d.subheader('Faça o download da relação de atividades sujeitas a Vigilância Sanitária, de acordo com a legislação mineira.')    
 st.download_button(label="Atividades",
