@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 from annotated_text import annotated_text
 from urllib import request
+import requests
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
