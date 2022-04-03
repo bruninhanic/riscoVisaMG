@@ -373,11 +373,11 @@ st.table(filtered_df)
 
 st.text('')
 
-file_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
-
+arquivo = open('https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt','r')
+conteudo = arquivo.read()
     
 st.download_button(label="Atividades",
-                    data=file,
+                    data=conteudo,
                     file_name="AtividadesVisaMG.txt",
                     mime='text/csv')
 
