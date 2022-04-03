@@ -381,7 +381,7 @@ request.urlretrieve(file_url, file)
 
     
 st.download_button(label="Atividades",
-                    data=file,
+                    data='AtividadesVisaMG.txt',
                     file_name="AtividadesVisaMG.txt",
                     mime='application/octet-stream')
 
