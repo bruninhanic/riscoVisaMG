@@ -373,7 +373,7 @@ st.table(filtered_df)
 
 st.text('')
 
-file_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
+file_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
 file = 'AtividadesVisaMGAbril2022.pdf'
 request.urlretrieve(file_url , file)
 
@@ -384,7 +384,7 @@ print(PDFbyte)
     
 st.download_button(label="Atividades",
                     data=PDFbyte,
-                    file_name="AtividadesVisaMG.pdf",
+                    file_name="AtividadesVisaMG.txt",
                     mime='application/octet-stream')
 
 c = st.container()
