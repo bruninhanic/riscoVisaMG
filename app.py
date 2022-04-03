@@ -2,7 +2,6 @@
 
 import streamlit as st
 import pandas as pd
-from annotated_text import annotated_text
 
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
