@@ -13,8 +13,6 @@ respostaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/respostaRisc
 
 atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv?raw=True"
 
-img = Image.open('https://github.com/bruninhanic/riscoVisaMG/blob/main/visa.jpg')
-
 
 st.set_page_config(
     page_title='Risco VISA/MG', 
@@ -79,7 +77,7 @@ def load_respostas():
 
 respostas_df = load_respostas()
 
-st.image(img, width=150)
+st.image('https://github.com/bruninhanic/riscoVisaMG/blob/main/visa.jpg', width=150)
 st.header('Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais')
 st.text('Código de Saúde do Estado de Minas Gerais')
 st.text('Resolução SES/MG n. 7426/2021')
