@@ -8,6 +8,7 @@ import requests
 import wget
 import base64
 from io import BytesIO
+import xlsxwriter
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
