@@ -384,7 +384,7 @@ data = requests.get(remote_url)
 with open(local_file, 'wb') as file:
     file.write(data.content)
 
-st.text(data)
+st.text(data.content)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
