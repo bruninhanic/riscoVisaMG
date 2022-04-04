@@ -5,3 +5,4 @@ st-annotated-text==3.0.0
 urllib3==1.26.9
 requests==2.27.1
 wget==3.2
+pathlib2==2.3.7
