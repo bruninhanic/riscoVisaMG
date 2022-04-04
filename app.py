@@ -377,8 +377,8 @@ st.text('')
 
 submit = st.button('Atividades')
 if submit:
-    remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
-    local_file = 'AtividadesVISAMG.pdf'
+    remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
+    local_file = 'AtividadesVISAMG.txt'
 
     wget.download(remote_url, local_file)
 
