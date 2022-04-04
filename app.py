@@ -380,7 +380,7 @@ if submit:
     remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
     local_file = 'AtividadesVISAMG.txt'
 
-    wget.download(remote_url, local_file)
+    request.urlretrieve(remote_url, local_file)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
