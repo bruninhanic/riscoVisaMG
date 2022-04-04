@@ -378,21 +378,13 @@ st.table(filtered_df)
 
 st.text('')
 
-def downloadFile(remote_url, local_file):
-    with open(local_file, "wb") as file:
-        response = requests.get(remote_url)
-        file.write(response.content)
-
-
 submit = st.button('Atividades')
+
+remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
+local_file = 'AtividadesVISAMG.txt'
+
 if submit:
-    scriptPath = sys.path[0]
-    downloadPath = os.path.join(scriptPath, '../Downloads/')
-    remote_url = sys.argv[1]
-    local_file = sys.argv[2]      
-    print('downloading file to: ' + downloadPath)
-    downloadFile(remote_url, downloadPath + local_file)
-    print('file downloaded...')
+    request.urlretrieve(remote_url, local_file)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
