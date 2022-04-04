@@ -380,16 +380,15 @@ st.text('')
 
 remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
 
-local_file = 'AtividadesVisaMG'
+local_file = 'AtividadesVisaMG.pdf'
 
 data = requests.get(remote_url)
 
-with open(local_file, 'wb')as file:
-    file.write(data.content)
+request.urlretrieve(remote_url, local_file)
 
 
 st.download_button(label="Atividades", 
-        data=file,
+        data=local_file,
         file_name="AtividadesVisaMG.pdf",
         mime='application/octet-stream')
 
