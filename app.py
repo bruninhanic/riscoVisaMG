@@ -389,7 +389,6 @@ with open(local_file, 'wb') as f:
 
 st.download_button(label="Atividades", 
         data=local_file,
-        file_name="AtividadesVisaMG.txt",
         mime='application/octet-stream')
 
 
