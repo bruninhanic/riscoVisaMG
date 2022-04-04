@@ -375,12 +375,12 @@ st.table(filtered_df)
 
 st.text('')
 
-submit = st.button('submit new letters')
+submit = st.button('Atividades')
 if submit:
-    url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
-    r = requests.get(url, allow_redirects=True)
+    remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
+    local_file = 'AtividadesVISAMG.pdf'
 
-    open('AtividadesVisaMG.pdf', 'wb').write(r.content)
+    wget.download(remote_url, local_file)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
