@@ -386,6 +386,7 @@ if submit:
     data = requests.get(remote_url)
     with open(local_file, 'wb') as f:
         f.write(data.content)
+        f.read()
         
 
 c = st.container()
