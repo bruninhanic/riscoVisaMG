@@ -385,8 +385,10 @@ r = requests.get(url, stream=True)
 submit = st.button('Atividades')
 
 
+
 if submit:
-    with open('../Downloads/AtividadesVISAMG.pdf', 'wb') as fd:
+    filename = Path('AtividadesVISAMG.pdf')
+    with open(filename, 'wb') as fd:
         for chunk in r.iter_content(chunk_size):
             fd.write(chunk)
 
