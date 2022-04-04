@@ -378,6 +378,14 @@ st.table(filtered_df)
 
 st.text('')
 
+with open("https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf", "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+
+st.download_button(label="Atividades", 
+        data=PDFbyte,
+        file_name="AtividadesVISAMG.pdf",
+        mime='application/octet-stream')
+
 submit = st.button('Atividades')
 
 remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
