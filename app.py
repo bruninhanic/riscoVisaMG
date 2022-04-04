@@ -25,7 +25,7 @@ st.set_page_config(
     page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico', 
     layout='centered', 
     initial_sidebar_state='collapsed', 
-    menu_items={'Get help': 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt',
+    menu_items={'Get help': 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.pdf',
                 'Report a Bug':'https://forms.office.com/r/ezyqvjzJJH',
                 'About': 'Esta aplicação permite a identificação do grau de risco do estabelecimento de acordo com a legislação mineira. Deve-se, para tanto, informar/escolher as atividades (subclasse CNAE) realizadas no estabelecimento.'
     }
