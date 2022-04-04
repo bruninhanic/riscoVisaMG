@@ -6,6 +6,7 @@ from annotated_text import annotated_text
 from urllib import request
 import requests
 import wget
+from pathlib import Path
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
@@ -377,13 +378,12 @@ st.text('')
 
 submit = st.button('Atividades')
 if submit:
-    remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
-    local_file = 'AtividadesVISAMG.txt'
+    remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
+    local_file = Path('AtividadesVISAMG.pdf')
     
     resp = requests.get(remote_url)
-
-    with open(local_file) as f:
-        f.write(resp.content)
+    
+    local_file.write_bytes(resp.content)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
