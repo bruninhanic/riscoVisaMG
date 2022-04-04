@@ -379,9 +379,11 @@ submit = st.button('Atividades')
 if submit:
     remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
     local_file = 'AtividadesVISAMG.txt'
+    
+    resp = requests.get(remote_url)
 
-    with request.urlopen(remote_url) as f:
-        txt = f.read().decode('utf-8')
+    with open(local_file) as f:
+        f.write(resp.content)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
