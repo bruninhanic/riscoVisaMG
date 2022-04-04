@@ -6,3 +6,4 @@ urllib3==1.26.9
 requests==2.27.1
 wget==3.2
 pathlib2==2.3.7
+pybase64==1.2.1
