@@ -403,7 +403,7 @@ def get_table_download_link(visa):
     """
     val = to_excel(visa)
     b64 = base64.b64encode(val)  # val looks like b'...'
-    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="Your_File.xlsx">Download Atividades file</a>' # decode b'abc' => abc
+    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="AtividadesVisaMG.xlsx">Download Atividades</a>' # decode b'abc' => abc
 
 st.markdown(get_table_download_link(visa), unsafe_allow_html=True)
        
