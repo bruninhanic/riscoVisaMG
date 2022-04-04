@@ -387,8 +387,8 @@ submit = st.button('Atividades')
 
 if submit:
     with open('/tmp/AtividadesVISAMG.pdf', 'wb') as fd:
-    for chunk in r.iter_content(chunk_size):
-        fd.write(chunk)
+        for chunk in r.iter_content(chunk_size):
+            fd.write(chunk)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
