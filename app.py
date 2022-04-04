@@ -384,13 +384,9 @@ r = requests.get(url, stream=True)
 
 submit = st.button('Atividades')
 
-
-
 if submit:
-    filename = Path('AtividadesVISAMG.pdf')
-    with open(filename, 'wb') as fd:
-        for chunk in r.iter_content(chunk_size):
-            fd.write(chunk)
+    with open(r,"rb") as f:
+        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
