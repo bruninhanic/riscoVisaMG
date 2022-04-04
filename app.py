@@ -382,13 +382,11 @@ st.text('')
 submit = st.button(label="Atividades")
 
 if submit:
-    remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
-    html = urlopen(remote_url)
+    url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
+    html = urlopen(url)
     bs = BeautifulSoup(html, 'lxml')
     s.text(bs.find_all())
-    
-
-        
+       
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
