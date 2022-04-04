@@ -9,6 +9,7 @@ import wget
 from pathlib import Path
 import sys
 import os
+from bs4 import BeautifulSoup
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
@@ -382,11 +383,11 @@ submit = st.button(label="Atividades")
 
 if submit:
     remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
-    local_file = 'AtividadesVisaMG.txt'
-    data = requests.get(remote_url)
-    with open(local_file, 'wb') as file:
-        file.write(data.content)
-    st.text(data.content) 
+    html = urlopen(remote_url)
+    bs = BeautifulSoup(html, 'lxml')
+    s.text(bs.find_all())
+    
+
         
 
 c = st.container()
