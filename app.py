@@ -378,8 +378,11 @@ st.text('')
 file_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt"
   
 file = 'AtividadesVisaMG.txt'
-wget.download(file_url, file)
 
+ativ = requests.get(file_url)
+
+with open (ativ, 'wb') as file:
+    file.write(ativ.content)
     
 st.download_button(label="Atividades",
                     data=file,
