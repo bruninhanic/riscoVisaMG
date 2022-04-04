@@ -384,8 +384,8 @@ local_file = 'AtividadesVisaMG.txt'
 
 data = requests.get(remote_url)
 
-request.urlretrieve(remote_url, local_file)
-
+with open(local_file, 'wb') as f:
+    f.write(data.content)
 
 st.download_button(label="Atividades", 
         data=local_file,
