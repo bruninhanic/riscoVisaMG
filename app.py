@@ -375,15 +375,14 @@ st.table(filtered_df)
 
 st.text('')
 
-file_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt"
+remote_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt"
   
-file = 'AtividadesVisaMG.txt'
+local_file = 'AtividadesVisaMG.txt'
 
-ativ = requests.get(file_url, allow_redirects=True)
+data = requests.get(remote_url)
 
-with open(file, 'wb') as f:
-    for line in ativ:
-        f.write(line.content)
+with open(local_file, 'wb') as file:
+    file.write(data.content)
     
 st.download_button(label="Atividades",
                     data=file,
