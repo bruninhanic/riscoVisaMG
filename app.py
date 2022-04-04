@@ -383,10 +383,9 @@ submit = st.button(label="Atividades")
 if submit:
     remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
     local_file = 'AtividadesVisaMG.txt'
-    data = requests.get(remote_url)
-    with open(local_file, 'wb') as f:
-        f.write(data.content)
-    f.read()
+    wget.download(remote_url, local_file)
+    
+
         
 
 c = st.container()
