@@ -381,7 +381,7 @@ if submit:
     local_file = 'AtividadesVISAMG.txt'
 
     ativ = wget.download(remote_url, local_file)
-    return ativ
+return ativ
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
