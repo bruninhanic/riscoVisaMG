@@ -382,20 +382,13 @@ st.text('')
 url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
 r = requests.get(url, stream=True)
 
-with open('/tmp/AtividadesVISAMG.pdf', 'wb') as fd:
-    for chunk in r.iter_content(chunk_size):
-        fd.write(chunk)
-
-st.download_button(label="Atividades", 
-        data=fd,
-        file_name="AtividadesVISAMG.pdf",
-        mime='application/octet-stream')
-
 submit = st.button('Atividades')
 
 
 if submit:
-    wget.download(remote_url, local_file)
+    with open('/tmp/AtividadesVISAMG.pdf', 'wb') as fd:
+    for chunk in r.iter_content(chunk_size):
+        fd.write(chunk)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
