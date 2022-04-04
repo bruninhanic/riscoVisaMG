@@ -381,7 +381,7 @@ st.text('')
 
 remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
 local_file = 'AtividadesVISAMG.txt'
-wget.download(remote_url, local_file)
+request.urlretrieve(remote_url, local_file)
 
 with open(local_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
