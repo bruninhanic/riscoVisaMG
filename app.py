@@ -394,7 +394,7 @@ def show_pdf(file_path):
 
 if submit:
     request.urlretrieve(remote_url, file_path)
-    show_pdf('AtividadesVisaMG.pdf')
+    show_pdf(file_path)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
