@@ -383,8 +383,8 @@ submit = st.button(label="Atividades")
 
 if submit:
     url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
-    html = urlopen(url)
-    bs = BeautifulSoup(html, 'html.parser')
+    resp = requests.get(url)
+    bs = BeautifulSoup(resp.content, 'html.parser')
     s.text(bs.find_all())
        
 
