@@ -101,6 +101,35 @@ st.markdown('Aviso 4:')
 st.caption('A utilização desta ferramenta não substitui a consulta aos Órgãos de Vigilância Sanitária.')
 st.text('')
 
+st.markdown('Confira a relação de atividades sujeitas a controle sanitário no link abaixo:')
+def load_visa():
+    # carrega os dados das atividades
+    visa = pd.read_csv(visaURL,
+                        dtype={'Classificacao': 'object', 'CodigoSubclasseCNAE': 'object', 'DescricaoSubclasseCNAE': 'object'},
+                        sep=';', encoding='latin1', on_bad_lines='skip', engine='c', header=0)
+    return visa
+
+visa = load_visa()
+
+def to_excel(visa):
+    output = BytesIO()
+    writer = pd.ExcelWriter(output, engine='xlsxwriter')
+    visa.to_excel(writer, index = False, sheet_name='Sheet1',float_format="%.2f")
+    writer.save()
+    processed_data = output.getvalue()
+    return processed_data
+
+def get_table_download_link(visa):
+    """Generates a link allowing the data in a given panda dataframe to be downloaded
+    in:  dataframe
+    out: href string
+    """
+    val = to_excel(visa)
+    b64 = base64.b64encode(val)  # val looks like b'...'
+    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="AtividadesVisaMG.xlsx">Download Atividades</a>' # decode b'abc' => abc
+
+st.markdown(get_table_download_link(visa), unsafe_allow_html=True)
+
 # ESCOLHER ATIVIDADES
 
 st.subheader('Vamos começar!')
@@ -378,35 +407,6 @@ st.text('Risco(s) da(s) atividade(s):')
 st.table(filtered_df)
 
 st.text('')
-
-def load_visa():
-    # carrega os dados das atividades
-    visa = pd.read_csv(visaURL,
-                        dtype={'Classificacao': 'object', 'CodigoSubclasseCNAE': 'object', 'DescricaoSubclasseCNAE': 'object'},
-                        sep=';', encoding='latin1', on_bad_lines='skip', engine='c', header=0)
-    return visa
-
-visa = load_visa()
-
-def to_excel(visa):
-    output = BytesIO()
-    writer = pd.ExcelWriter(output, engine='xlsxwriter')
-    visa.to_excel(writer, index = False, sheet_name='Sheet1',float_format="%.2f")
-    writer.save()
-    processed_data = output.getvalue()
-    return processed_data
-
-def get_table_download_link(visa):
-    """Generates a link allowing the data in a given panda dataframe to be downloaded
-    in:  dataframe
-    out: href string
-    """
-    val = to_excel(visa)
-    b64 = base64.b64encode(val)  # val looks like b'...'
-    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="AtividadesVisaMG.xlsx">Download Atividades</a>' # decode b'abc' => abc
-
-st.markdown(get_table_download_link(visa), unsafe_allow_html=True)
-       
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
