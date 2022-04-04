@@ -389,7 +389,7 @@ request.urlretrieve(remote_url, local_file)
 
 st.download_button(label="Atividades", 
         data=local_file,
-        file_name="AtividadesVisaMG.pdf",
+        file_name="AtividadesVisaMG.txt",
         mime='application/octet-stream')
 
 
