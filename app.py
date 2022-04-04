@@ -385,7 +385,7 @@ if submit:
     url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
     resp = requests.get(url)
     bs = BeautifulSoup(resp.content, 'html.parser')
-    ativ = bs.find_all('p')
+    ativ = bs.find('div')
     s.text(ativ)
        
 
