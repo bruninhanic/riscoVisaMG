@@ -379,7 +379,7 @@ file_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaA
   
 file = 'AtividadesVisaMG.txt'
 
-ativ = requests.get(file_url)
+ativ = requests.get(file_url, allow_redirects=True)
 
 with open(file, 'wb') as f:
     f.write(ativ.content)
