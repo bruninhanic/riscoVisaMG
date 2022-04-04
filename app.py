@@ -393,7 +393,7 @@ def show_pdf(file_path):
 
 
 if submit:
-    request.urlretrieve(remote_url, local_file)
+    request.urlretrieve(remote_url, file_path)
     show_pdf('AtividadesVisaMG.pdf')
 
 c = st.container()
