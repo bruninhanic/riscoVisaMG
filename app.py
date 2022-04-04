@@ -375,6 +375,13 @@ st.table(filtered_df)
 
 st.text('')
 
+submit = st.button('submit new letters')
+if submit:
+    url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
+    r = requests.get(url, allow_redirects=True)
+
+    open('AtividadesVisaMG.pdf', 'wb').write(r.content)
+
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
 c.write('Se a circunstância que enseja a alteração não se refere a nenhum dos casos enumerados nos Avisos 1 e 2, você pode submeter um pedido de alteração, preenchendo a solicitação pelo formulário:')
