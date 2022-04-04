@@ -378,19 +378,14 @@ st.table(filtered_df)
 
 st.text('')
 
-remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
+submit = st.button(label="Atividades")
 
-local_file = 'AtividadesVisaMG.txt'
-
-data = requests.get(remote_url)
-
-with open(local_file, 'wb') as f:
-    f.write(data.content)
-
-st.download_button(label="Atividades", 
-        data=local_file,
-        mime='application/octet-stream')
-
+if submit:
+    remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
+    local_file = 'AtividadesVisaMG.txt'
+    data = requests.get(remote_url)
+    with open(local_file, 'wb') as f:
+        f.write(data.content)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
