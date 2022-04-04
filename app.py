@@ -378,9 +378,9 @@ st.table(filtered_df)
 
 st.text('')
 
-remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
+remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
 
-local_file = 'AtividadesVisaMG.pdf'
+local_file = 'AtividadesVisaMG.txt'
 
 data = requests.get(remote_url)
 
