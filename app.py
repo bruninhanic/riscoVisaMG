@@ -382,13 +382,14 @@ remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaVali
 
 local_file = 'AtividadesVisaMG'
 
-request.urlretrieve(remote_url, local_file)
+data = requests.get(remote_url)
 
-with open(local_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+with open(local_file, 'wb')as file:
+    file.write(data.content)
+
 
 st.download_button(label="Atividades", 
-        data=PDFbyte,
+        data=file,
         file_name="AtividadesVisaMG.pdf",
         mime='application/octet-stream')
 
