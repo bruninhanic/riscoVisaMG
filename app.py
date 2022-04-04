@@ -379,15 +379,15 @@ st.table(filtered_df)
 st.text('')
 
 
-remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
-local_file = 'AtividadesVISAMG.txt'
-request.urlretrieve(remote_url, local_file)
+url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
+r = requests.get(url, stream=True)
 
-with open(local_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+with open('/tmp/AtividadesVISAMG.pdf', 'wb') as fd:
+    for chunk in r.iter_content(chunk_size):
+        fd.write(chunk)
 
 st.download_button(label="Atividades", 
-        data=PDFbyte,
+        data=fd,
         file_name="AtividadesVISAMG.pdf",
         mime='application/octet-stream')
 
