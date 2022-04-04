@@ -375,17 +375,6 @@ st.table(filtered_df)
 
 st.text('')
 
-remote_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt"
-  
-local_file = 'AtividadesVisaMG.txt'
-
-data = requests.get(remote_url)
-
-with open(local_file, 'wb') as file:
-    file.write(data.content)
-
-st.text(data.content)
-
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
 c.write('Se a circunstância que enseja a alteração não se refere a nenhum dos casos enumerados nos Avisos 1 e 2, você pode submeter um pedido de alteração, preenchendo a solicitação pelo formulário:')
