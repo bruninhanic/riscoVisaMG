@@ -386,7 +386,7 @@ if submit:
     resp = requests.get(url)
     bs = BeautifulSoup(resp.content, 'html.parser')
     ativ = bs.find('div')
-    s.text(ativ)
+    st.text(ativ)
        
 
 c = st.container()
