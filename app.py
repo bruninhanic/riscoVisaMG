@@ -382,7 +382,8 @@ file = 'AtividadesVisaMG.txt'
 ativ = requests.get(file_url, allow_redirects=True)
 
 with open(file, 'wb') as f:
-    f.write(ativ.content)
+    for line in ativ:
+        f.write(line.content)
     
 st.download_button(label="Atividades",
                     data=file,
