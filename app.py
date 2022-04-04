@@ -383,7 +383,7 @@ def load_visa():
     # carrega os dados das atividades
     visa = pd.read_csv(visaURL,
                         dtype={'Classificacao': 'object', 'CodigoSubclasseCNAE': 'object', 'DescricaoSubclasseCNAE': 'object'},
-                        sep=';', encoding='utf8', on_bad_lines='skip', engine='c', header=0)
+                        sep=';', encoding='latin1', on_bad_lines='skip', engine='c', header=0)
     return visa
 
 visa = load_visa()
