@@ -383,7 +383,7 @@ remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVis
 local_file = 'AtividadesVISAMG.txt'
 wget.download(remote_url, local_file)
 
-with open("https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf", "rb") as pdf_file:
+with open(local_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 st.download_button(label="Atividades", 
