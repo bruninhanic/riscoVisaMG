@@ -7,6 +7,8 @@ from urllib import request
 import requests
 import wget
 from pathlib import Path
+import sys
+import os
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
@@ -376,14 +378,21 @@ st.table(filtered_df)
 
 st.text('')
 
+def downloadFile(remote_url, local_file):
+    with open(local_file, "wb") as file:
+        response = requests.get(remote_url)
+        file.write(response.content)
+
+
 submit = st.button('Atividades')
 if submit:
-    remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
-    local_file = Path('AtividadesVISAMG.pdf')
-    
-    resp = requests.get(remote_url)
-    
-    local_file.write_bytes(resp.content)
+    scriptPath = sys.path[0]
+    downloadPath = os.path.join(scriptPath, '../Downloads/')
+    remote_url = sys.argv[1]
+    local_file = sys.argv[2]      
+    print('downloading file to: ' + downloadPath)
+    downloadFile(remote_url, downloadPath + local_file)
+    print('file downloaded...')
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
