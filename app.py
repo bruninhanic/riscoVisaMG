@@ -387,7 +387,7 @@ with open(local_file, 'wb') as file:
 st.download_button(label="Atividades",
                     data=file,
                     file_name="AtividadesVisaMG.txt",
-                    mime='application/octet-stream')
+                    mime='text/plain')
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
