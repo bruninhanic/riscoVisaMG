@@ -379,20 +379,15 @@ st.table(filtered_df)
 st.text('')
 
 
-submit = st.button('Atividades')
 
-def show_pdf(file_path):
-    remote_url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf'
-    file_path = 'AtividadesVisaMG.pdf'
-    with open(file_path,"rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
+with open("https://github.com/bruninhanic/riscoVisaMG/blob/main/TipologiaValidacaoAbril2022.pdf", "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
 
+st.download_button(label="Atividades", 
+        data=PDFbyte,
+        file_name="AtividadesVisaMG.pdf",
+        mime='application/octet-stream')
 
-if submit:
-    request.urlretrieve(remote_url, file_path)
-    show_pdf(file_path)
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
