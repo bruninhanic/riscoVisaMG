@@ -6,10 +6,8 @@ from annotated_text import annotated_text
 from urllib import request
 import requests
 import wget
-from pathlib import Path
-import sys
-import os
-from bs4 import BeautifulSoup
+import base64
+from io import BytesIO
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
@@ -19,6 +17,7 @@ respostaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/respostaRisc
 
 atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv?raw=True"
 
+visaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/atividadesVisaAbril2022.csv"
 
 st.set_page_config(
     page_title='Risco VISA/MG', 
@@ -379,14 +378,33 @@ st.table(filtered_df)
 
 st.text('')
 
-submit = st.button(label="Atividades")
+def load_visa():
+    # carrega os dados das atividades
+    visa = pd.read_csv(visaURL,
+                        dtype={'Classificacao': 'object', 'CodigoSubclasseCNAE': 'object', 'DescricaoSubclasseCNAE': 'object'},
+                        sep=';', encoding='utf8', on_bad_lines='skip', engine='c', header=0)
+    return visa
 
-if submit:
-    url = 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt'
-    resp = requests.get(url)
-    bs = BeautifulSoup(resp.content, 'html.parser')
-    ativ = bs.find('div')
-    st.text(ativ)
+visa = load_visa()
+
+def to_excel(visa):
+    output = BytesIO()
+    writer = pd.ExcelWriter(output, engine='xlsxwriter')
+    visa.to_excel(writer, index = False, sheet_name='Sheet1',float_format="%.2f")
+    writer.save()
+    processed_data = output.getvalue()
+    return processed_data
+
+def get_table_download_link(visa):
+    """Generates a link allowing the data in a given panda dataframe to be downloaded
+    in:  dataframe
+    out: href string
+    """
+    val = to_excel(visa)
+    b64 = base64.b64encode(val)  # val looks like b'...'
+    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="Your_File.xlsx">Download Atividades file</a>' # decode b'abc' => abc
+
+st.markdown(get_table_download_link(visa), unsafe_allow_html=True)
        
 
 c = st.container()
