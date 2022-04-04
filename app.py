@@ -5,6 +5,7 @@ import pandas as pd
 from annotated_text import annotated_text
 from urllib import request
 import requests
+import wget
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
@@ -377,11 +378,11 @@ st.text('')
 file_url = "https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.txt"
   
 file = 'AtividadesVisaMG.txt'
-request.urlretrieve(file_url, file)
+wget.download(file_url, file)
 
     
 st.download_button(label="Atividades",
-                    data='AtividadesVisaMG.txt',
+                    data=file,
                     file_name="AtividadesVisaMG.txt",
                     mime='application/octet-stream')
 
