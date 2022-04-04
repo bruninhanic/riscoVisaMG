@@ -18,7 +18,7 @@ respostaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/respostaRisc
 
 atividadeURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/cnaesVisa.csv?raw=True"
 
-visaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/atividadesVisaAbril2022.csv"
+visaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/atividadesVisaAbril2022.csv?raw=True"
 
 st.set_page_config(
     page_title='Risco VISA/MG', 
