@@ -384,7 +384,9 @@ data = requests.get(remote_url)
 with open(local_file, 'wb') as file:
     file.write(data.content)
     
-st.text(type(file))
+st.download_button(label="Atividades",
+                   data=file,
+                   file_name="AtividadesVisaMG.txt")
 
 c = st.container()
 c.subheader('Deseja solicitar alguma alteração?')
