@@ -88,7 +88,7 @@ annotated_text(('Código de Saúde', 'de Minas Gerais', '#8ef'),)
 annotated_text(('Resolução SES/MG', 'n. 7426/2021', '#faa'),)
 st.text('')
 
-st.warning('Por meio da aplicação é possível consultar, a partir da inserção de todas as atividades sujeitas a controle sanitário, em qual grau de risco sanitário o estabelecimento se enquadra, de acordo com o Código de Saúde do Estado de Minas Gerais e a a Resolução SES/MG n. 7426/2021.')
+st.warning('Por meio da aplicação é possível consultar, a partir da inserção de todas as atividades sujeitas a controle sanitário, em qual grau de risco sanitário o estabelecimento se enquadra, de acordo com o Código de Saúde do Estado de Minas Gerais e a Resolução SES/MG n. 7426/2021.')
 st.text('')
              
 st.markdown('Aviso 1:')
