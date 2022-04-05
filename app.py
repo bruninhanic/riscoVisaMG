@@ -9,6 +9,7 @@ import wget
 import base64
 from io import BytesIO
 import xlsxwriter
+from PIL import Image
 
 riscoURL = r"https://github.com/bruninhanic/riscoVisaMG/blob/main/riscoVisa.csv?raw=true"
 
@@ -83,6 +84,8 @@ def load_respostas():
 
 respostas_df = load_respostas()
 
+image = Image.open('https://github.com/bruninhanic/riscoVisaMG/blob/main/content_visa-selo.png?raw=True')
+st.image(image, output_format='PNG')
 st.header('Consulta a classificação do risco sanitário de estabelecimentos segundo a legislação de Minas Gerais')
 annotated_text(('Código de Saúde', 'de Minas Gerais', '#8ef'),)
 annotated_text(('Resolução SES/MG', 'n. 7426/2021', '#faa'),)
