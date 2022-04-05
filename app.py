@@ -22,7 +22,7 @@ visaURL = "https://github.com/bruninhanic/riscoVisaMG/blob/main/atividadesVisaAb
 
 st.set_page_config(
     page_title='Risco VISA/MG', 
-    page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico', 
+    page_icon='https://github.com/bruninhanic/riscoVisaMG/blob/main/favicon.ico?raw=True', 
     layout='centered', 
     initial_sidebar_state='collapsed', 
     menu_items={'Get help': 'https://github.com/bruninhanic/riscoVisaMG/blob/main/AtividadesVisaAbril2022.pdf',
