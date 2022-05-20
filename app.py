@@ -92,7 +92,7 @@ st.warning('Por meio da aplicação é possível consultar, a partir da inserç�
 st.text('')
              
 st.markdown('Aviso 1:')
-st.caption('As classificações de risco apresentadas nesta aplicação se referem ao disposto na Resolução SES/MG 7426/2021, aplicável aos estabelecimentos mineiros.')
+st.caption('As classificações de risco apresentadas nesta aplicação se referem ao disposto na Resolução SES/MG 7426/2021 e no Código de Saúde do Estado de Minas Gerais, aplicável aos estabelecimentos mineiros.')
 st.markdown('Aviso 2:')
 st.caption('Caso um mesmo estabelecimento conte com mais de uma atividade econômica/CNAE sob controle sanitário, o enquadramento com relação ao risco deverá considerar a atividade de maior risco. Ou seja, se forem desenvolvidas três atividades sob controle sanitário, sendo duas de risco II e uma de risco III, o enquadramento do estabelecimento será no alto risco (risco III).')
 st.markdown('Aviso 3:')
